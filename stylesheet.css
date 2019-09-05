@@ -124,7 +124,7 @@ nav ul li a:hover {
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
 
 
-/* => Intro 2 */
+/* => Intro 4 */
 .intro4 {
   width: 100%;
   height: auto;
@@ -139,8 +139,10 @@ nav ul li a:hover {
   /* In case need to adjust the WHOLE intro down when not enough space */
   /* margin: 0px 0 0 0; */
 
-  /* Darken the background color so as to make the words more readable */
-  background: red;
+  /*   Darken the background color so as to make the words more readable */
+  /*   background: red; */
+  filter: grayscale(100%) blur(0px) contrast(50%) ;
+  mix-blend-mode: multiply;
 
   /* These 2 don't work: purpose is to darken the image */
   background-blend-mode: multiply;
