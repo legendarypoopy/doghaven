@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr_primary: #8BCD2D;
+  --clr_accent: #4c4c4c;
+  --clr_dark: black;
+  --clr_light: white;
+
+  --ff_title: 'Raleway', sans-serif;
+  --ff_serif: 'Open Sans', sans-serif;
+  /* --ff_title: 'Lato', sans-serif; */
+  /* --ff_title: 'Julius Sans One', sans-serif; */
+  /* --ff_title: 'Oswald', sans-serif; */
+  
+  --font_n: 0.99rem;
+  --font_s: 0.82rem;
+  --font_m: 1.2rem;
+  --font_l: 2.4rem;
+}
+
+/* => Standardized All Typograghy and Font size*/
+html{
+  box-sizing: ;
+  font-family: var(--ff_serif);
+  color: var(--clr_accent);
+  font-size: var(--font_n);
+  font-weight: ;
+}
+
+/* => Standardized All Typograghy and Font size*/
+h1 {
+  font-family: var(--ff_title);
+  font-size: var(--font_l);
+  line-height: var(--font_l);
+}
+h2 {
+  font-size: var(--font_m);
+}
+h3 {
+  /* font-family: var(--ff_title); */
+  font-size: var(--font_m);
+}
+p {
+  font-size: var(--font_n);
+}
+
+/* => Nav Bar and Logo img */
+nav {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  min-height: 8vh;
+  background: var(--clr_light);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.8s;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  padding: 0 5% 0 0;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: red;
+}
+nav ul li a:hover {
+  color: blue;
+}
+.logo {
+  padding: 0 0 0 6%;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+
+/* => Intro 1 */
+.intro {
+  width: 100%;
+  height: 830px;
+  /* height: 100vh; */
+  
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  /* padding: 10% 5% 10% 5%; */
+  
+  /* In case need to adjust the WHOLE intro down when not enough space */
+  /* margin: 0px 0 0 0; */
+  
+  /* Just want to see the full height on phone, to toggle off when done */
+  /* background: #eeeeee; */
+}
+.intro .text {
+  width: 100%;
+  /* height: 580px; */
+  /* float: left; */
+}
+.intro .text h1 {
+  padding: 15% 6% 0 6%;
+}
+.intro .text h2 {
+  padding: 1% 6% 0% 6%;
+}
+.intro .text h3 {
+  padding: 10% 6% 0 6%;
+}
+.intro .text p {
+  padding: 1% 6% 0.5% 6%;
+  /* font-size: var(--font_s); */
+}
+/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
+/*  */
+.intro .container_image_on_mobile {
+  height: 300px;
+
+  /* Image position and size adjustment */
+  background-image: url("labrador.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 60%; */
+  /* Adjust image left/right */
+  /* background-position: 400px 100px; */
+  
+  background-size: cover;
+  /* Adjust image left/right/top/bottom */
+  background-position: top;
+  /* For more precise positioning of x and y axis */
+  /* background-position-x: 50px;
+  background-position-y: 100px; */
+}
+.intro .mini_nav {
+  /* Display none to hide this div completely in mobile view */
+  display: none;
+}
+
+
+/* => Intro 4 */
+.intro4 {
+  width: 100%;
+  height: 830px;
+  /* height: 100vh; */
+  
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  /* padding: 10% 5% 10% 5%; */
+  
+  /* In case need to adjust the WHOLE intro down when not enough space */
+  /* margin: 0px 0 0 0; */
+
+  /* Just want to see the full height on phone, to toggle off when done */
+  background: tomato;
+
+  /* Image position and size adjustment */
+  background-image: url("DFA.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 60%; */
+  /* Adjust image left/right */
+  /* background-position: 400px 100px; */
+  
+  background-size: cover;
+  /* Adjust image left/right/top/bottom */
+  background-position: top;
+  /* For more precise positioning of x and y axis */
+  /* background-position-x: 50px;
+  background-position-y: 100px; */  
+}
+.overlay {
+  /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
+  Therefore, the text need to position relative so they will be visible again */
+  position: absolute;
+  width: 100%;
+  /* Note: height is 100% in respect to intro height of 100vh */
+  height: 830px;
+  /* Darken the background image so that text are more readable */
+  background: rgba(0, 0, 0, 0.5);
+}
+.intro4 .text {
+  width: 100%;
+  /* height: 580px; */
+  /* float: left; */
+}
+.intro4 .text h1 {
+  padding: 20% 6% 0 6%;
+  color: var(--clr_light);
+  /* Position relative will make the text visible as there is an overlay above it */
+  position: relative;
+}
+.intro4 .text h2 {
+  padding: 1% 6% 0% 6%;
+  color: var(--clr_light);
+  /* Position relative will make the text visible as there is an overlay above it */
+  position: relative;
+}
+.intro4 .text h3 {
+  padding: 10% 6% 0 6%;
+  color: var(--clr_light);
+  /* Position relative will make the text visible as there is an overlay above it */
+  position: relative;
+}
+.intro4 .text p {
+  padding: 1% 6% 0.5% 6%;
+  color: var(--clr_light);
+  /* font-size: var(--font_s); */
+  /* Position relative will make the text visible as there is an overlay above it */
+  position: relative;
+}
+/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
+/*  */
+.intro4 .container_image_on_mobile {
+  /* This height is required (and same throughout) so that the full intro height will be same throughout */
+  height: 300px;
+
+  /* Image position and size adjustment */
+  /* background-image: url("labrador.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 60%; */
+  /* Adjust image left/right */
+  /* background-position: 400px 100px; */
+  
+  /* background-size: cover; */
+  /* Adjust image left/right/top/bottom */
+  /* background-position: top; */
+  /* For more precise positioning of x and y axis */
+  /* background-position-x: 50px;
+  background-position-y: 100px; */
+}
+.intro4 .mini_nav {
+  /* Display none to hide this div completely in mobile view */
+  display: none;
+}
+
+
+/* Recognition section */
+.recognition {
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+
+  /* Just want to see the full height on phone, to toggle off when done */
+  /* background: tomato; */
+}
+.recognition h1 {
+  padding: 12% 6% 0 6%;
+  /* Font size, family, height to adjust in Typography */
+  color: var(--clr_accent);
+}
+.recognition p {
+  /* Adjust only top and bottom. Left and right control in .recognition div */
+  padding: 3% 6% 10% 6%;
+  
+  /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+  color: var(--clr_accent);
+}
+.recognition .news {
+  height: 430px;
+  /* width: 100%; */
+  background: var(--clr_light);
+  /* background-position: ; */
+  /* padding: ; */
+}
+.recognition .news .news_image {
+  height: 350px;
+  width: 60%;
+  background: red;
+  background-image: url("dog\ grooming\ course.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /* background-position-x: right; */
+  /* padding: 100px 0 0 20px;  */
+  margin: auto;
+  border: red;
+}
+
+/* Comb divider */
+.divider1 {
+  /* width: 100%; */
+  height: 120px;
+  /* Fill the sides of the image to be black as well.  
+  Background color must be before scissors.jpg or else layer will  stacked underneath scissors */
+  /* background: var(--clr_dark); */
+  background-image: url("comb.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom center; 
+  /* This margin will remove the unwanted top and bottom line (around -10px and -5px) */
+  /* margin: -10px 0 -5px 0; */
+
+  /* This margin will remove the unwanted top and bottom line (around 6px) */
+  /* margin: 0 0 -6px 0; */
+
+  /* See if this works for mobile */
+  /* width: 100%;
+  height: auto; */
+}
+.divider1 img {
+  width: 100%;
+  height: auto;
+  /* In case need to adjust the whole intro down when not enough space */
+  /* margin: 0 0 0 0; */
+}
+
+
+/* What do we do section */
+.what_we_do {
+  /* Just want to see the full height on phone, to toggle off when done */
+  /* margin: 100px 0 0 0; */
+
+  width: 100%;
+  height: auto;
+
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  
+  background: var(--clr_dark);
+
+  /* Background with gradient color */
+  /* background-image: linear-gradient(black, var(--clr_primary), black); */
+}
+.what_we_do h1 {
+  /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+  color: var(--clr_light);
+
+  /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+  padding: 12% 6% 0 6%;
+}
+.what_we_do p {
+  /* Adjust only top and bottom. Left and right control in .recognition div */
+  padding: 3% 6% 5% 6%;
+  
+  /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+  color: var(--clr_light);
+}
+
+
+/* Scissors divider */
+.divider2_image_on_mobile {
+  height: 230px;
+  /* Fill the sides of the image to be black as well.  
+  Background color must be before scissors.jpg or else layer will  stacked underneath scissors */
+  background: var(--clr_dark);
+  background-image: url("scissors.jpg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom center; 
+  /* This margin will remove the unwanted top and bottom line (around -10px and -5px) */
+  /* margin: -10px 0 -5px 0; */
+
+}
+
+
+/* => Footer section  */
+.footer {
+  width: 100%;
+  /* height: auto; */
+  background: var(--clr_primary);
+  color: var(--clr_light);
+  
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+}
+.footer h1 {
+  padding: 9% 6% 0 6%;
+}
+
+.footer h1 a {
+  color: var(--clr_light);
+  text-decoration: none;
+}
+.footer h1 a:hover {
+  color: var(--clr_dark);
+}
+.footer p {
+  /* Adjust only top and bottom. Left and right control in .recognition div */
+  padding: 3% 6% 0.5% 6%;
+}
+/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
+.footer .copyright {
+  background: var(--clr_primary);
+  color: var(--clr_light);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0% 2% 0%;
+}
+.footer .copyright p {
+  font-size: var(--font_s);
+}
+
+
+/* Button 1 style: Grey text and perimeter */
+.btn {
+  font-size: var(--font_s);
+  padding: 0 10px;
+  border-radius: 30px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid var(--clr_accent);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_accent);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 2% 5% 0% 6%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_accent);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_accent);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn:hover {
+  color: var(--clr_light);
+  z-index: 1;
+}
+.btn:hover:before {
+  top: 0;
+}
+
+
+/* Button 2 style: White text and perimeter */
+.btn2 {
+  font-size: var(--font_s);
+  padding: 0 10px;
+  border-radius: 30px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid var(--clr_light);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_light);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 2% 5% 10% 6%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn2:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn2:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn2:hover {
+  color: var(--clr_dark);
+  z-index: 1;
+}
+.btn2:hover:before {
+  top: 0;
+}
+
+
+/* Button 3 style (for Footer only): White text and perimeter */
+.btn3 {
+  font-size: var(--font_s);
+  padding: 0 10px;
+  border-radius: 30px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid var(--clr_light);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_light);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 2% 5% 6% 6%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn3:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn3:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn3:hover {
+  color: var(--clr_dark);
+  z-index: 1;
+}
+.btn3:hover:before {
+  top: 0;
+}
