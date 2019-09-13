@@ -74,13 +74,14 @@ nav {
 }
 nav ul {
   display: flex;
-  justify-content: space-between;
-  width: 49%;
+  justify-content: flex-end;
+  width: 60%;
   /* adjust the full height of the nav text BOX height */
   height: 55px;
   /* adjust the left and right gap of nav bar (moving whole nav bar left/right ). 
   can't adjust the top and bottom  */
-  padding: 0px 5.4% 0 0;
+  margin: 0 5% 0 0;
+
 }
 nav ul li {
   list-style: none;
@@ -93,7 +94,7 @@ nav ul li a {
   text-decoration: none;
   color: var(--clr_accent);
   /* adjust how big the gap of the text should fit in the box */
-  padding: 16px 15px 16px 15px;
+  padding: 16px 18px 16px 18px;
   /* backgrd color helps to differential what to adjust on */
   /* background: yellow; */
 }
