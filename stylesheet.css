@@ -75,12 +75,12 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  width: 44%;
+  width: 49%;
   /* adjust the full height of the nav text BOX height */
   height: 55px;
   /* adjust the left and right gap of nav bar (moving whole nav bar left/right ). 
   can't adjust the top and bottom  */
-  padding: 0px 5% 0 0;
+  padding: 0px 5.4% 0 0;
 }
 nav ul li {
   list-style: none;
@@ -93,7 +93,7 @@ nav ul li a {
   text-decoration: none;
   color: var(--clr_accent);
   /* adjust how big the gap of the text should fit in the box */
-  padding: 16px 17px 16px 17px;
+  padding: 16px 15px 16px 15px;
   /* backgrd color helps to differential what to adjust on */
   /* background: yellow; */
 }
@@ -212,8 +212,9 @@ nav ul li a:hover {
 
 /* => Intro1 */
 .intro1 {
-  /* width: 100%; */
+  width: 100%;
   height: 100vh;
+  /* position: relative; */
 
   /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
   Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
@@ -253,7 +254,7 @@ nav ul li a:hover {
 .intro1 .text {
   width: 100%;
   /* height: 600px; */
-  float: left;
+  /* float: left; */
 }
 .intro1 .text h1 {
   padding: 33% 6% 0 6%;
@@ -781,6 +782,99 @@ nav ul li a:hover {
   font-size: 1.4rem;
   color: var(--clr_accent);
 }
+
+
+/* slider css */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  /* position: absolute; */
+  /* margin: -50px 0 0 0; */
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* News section */

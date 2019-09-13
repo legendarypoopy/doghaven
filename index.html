@@ -29,7 +29,9 @@
   </nav>
 
 
-  <!-- <div class="intro">
+  <div class="slideshow-container">
+
+  <!-- <div class="intro mySlides fade">
     <div class="text">
       <h1 class="intro_header1">PROFESSIONAL GROOMERS</h1>
       <h2 class="intro_header2">In good hands of a 14 years experience stylist</h2>
@@ -52,18 +54,23 @@
   </div> -->
 
 
-  <div class="intro1">
+  <div class="intro1 mySlides fade">
     <div class="overlay1">
     </div>  
     <div class="text">
       <h1 class="intro_header1">PROFESSIONAL GROOMERS</h1>
-      <h2 class="intro_header2">In good hands of a 14 years experience stylist</h2>
+      <h2 class="intro_header2">In good hands of a 14 years experience stylist</h2> -->
+
+      <!-- Don't need these 2 for now -->
       <!-- <h3 class="intro_body1">Cage-less salon!</! -->
       <!-- <p class="intro_body2">Not only do we bathe away dirt, debris and odours from the dog's coat, but we trim, thin, brush and fluff it as well. We will diligently inspect your dog from the tip of its nose to the end of its wagging tail. Even though we are not vets, but we can sometimes help to point out things which require a vet's attention that a busy pet owner may sometimes overlook. We use only quality products that will leave your pet’s coat sparkling shiny, fresh and clean. If you prefer to bring along your own special products, we are happy to use them. Don’t forget, we groom cats and small animals as well!</p> -->
+
       <a href="#" class="btn1">Explore Salon</a>
     </div>
     <div class="container_image_on_mobile">
     </div>
+
+    <!-- Don't need mini_nav for now -->
     <!-- <div class="mini_nav">
       <ul>
         <li><a href="#" class="selector">&#8593</a></li>
@@ -77,7 +84,7 @@
   </div>
 
 
-  <div class="intro2">
+  <div class="intro2 mySlides fade">
       <div class="overlay2">
       </div>  
       <div class="text">
@@ -114,7 +121,7 @@
 
 
 
-  <div class="intro3">
+  <div class="intro3 mySlides fade">
       <div class="overlay3">
       </div>  
       <div class="text">
@@ -152,7 +159,7 @@
 
 
 
-  <div class="intro4">
+  <div class="intro4 mySlides fade">
     <div class="overlay4">
     </div>  
     <div class="text">
@@ -184,6 +191,24 @@
       </ul> 
     </div> -->
   </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+  <!-- below closing tag div is for class="slideshow-container" so don't delete -->
+  </div>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
  
     
   <main>
@@ -269,7 +294,7 @@
       <div class="secret_text">
         <h1 class="secret_header">WHAT'S OUR SECRET?</h1>
         <p class="secret_body">
-            Professional advice on the types of grooming style and trimming.
+            Provide professional advice on the types of grooming style and trimming.
             <br><br>
             Customise a trim to suit your pet's life-style and allow yourself to easily groom your furkid at home in between salon visits.
             <br><br>
@@ -304,6 +329,27 @@
   <div class="atomtest"></div>   -->
 
 
+  <!-- script for auto slider -->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+
+
+
+
   <!-- /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */ -->
   <script type="text/javascript">
     var prevScrollpos = window.pageYOffset;
@@ -317,6 +363,10 @@
       prevScrollpos = currentScrollPos;
     }  
   </script>  
+
+
+
+
 
 </body>
 </html>
