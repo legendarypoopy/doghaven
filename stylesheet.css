@@ -980,8 +980,9 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 
 
-/* What's our secret section */
-.secret {
+
+/* What do we do section */
+.objective {
   /* Just want to see the full height on phone, to toggle off when done */
   /* margin: 100px 0 0 0; */
 
@@ -1005,21 +1006,20 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
     /* background-position: 400px 100px; */ 
     /* background-size: cover; */
-
 }
-.secret .secret_text {
+.objective .objective_text {
   width: 100%;
   /* height: 600px; */
   /* float: left;   */
 }
-.secret h1 {
+.objective h1 {
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_accent);
 
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
   padding: 6% 50% 0 6%;
 }
-.secret p {
+.objective p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 3% 51% 6% 6%;
   
@@ -1029,8 +1029,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-/* What do we do section */
-.what_we_do {
+/* What's our secret section */
+.secret {
   /* Just want to see the full height on phone, to toggle off when done */
   /* margin: 100px 0 0 0; */
 
@@ -1057,25 +1057,26 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* background-position-x: 9%; */
     /* background-position-y: bottom; */
 }
-.what_we_do .what_we_do_text {
+.secret .secret_text {
   width: 100%;
   /* height: 600px; */
   /* float: left;   */
 }
-.what_we_do h1 {
+.secret h1 {
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_light);
 
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
   padding: 6% 6% 0 48%;
 }
-.what_we_do p {
+.secret p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 3% 6% 6% 48%;
   
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_light);
 }
+
 
 
 /* => Footer section  */
@@ -1144,6 +1145,15 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 .social .icon3:hover {
   color: var(--clr_primary);
 }
+
+/* CAN DELETE THIS AFTER TESTING
+.atomtest {
+  width: 100%;
+  height: 100vh;
+  background-image: url("dog\ cpr.gif");
+  background-repeat: no-repeat;
+  background-size: cover; 
+} */
 
 
 
