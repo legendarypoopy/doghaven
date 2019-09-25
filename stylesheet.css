@@ -1465,7 +1465,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-/* Button 2 style: White text and perimeter */
+/* Button 4 style: White text and perimeter */
 .btn4 {
   font-size: var(--font_n);
   padding: 0 15px;
@@ -1634,12 +1634,12 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* Image position and size adjustment */
     background-image: url("hero.jpg");
     background-repeat: no-repeat;
-    background-size: 600%;
+    background-size: 550%;
     /* background-size: cover; */
     /* Adjust image left/right */
-    background-position-x: -750px;
+    background-position-x: -970px;
     /* Adjust image top/bottom */
-    background-position-y: -240px;
+    background-position-y: -290px;
     /* background-position: bottom; */
     /* Adjust image left/right/top/bottom */
     /* background-position: -50px 100px; */
@@ -1661,7 +1661,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* float: left; */
   }
   .intro1 .text h1 {
-    padding: 85% 10% 0 10%;
+    padding: 105% 10% 0 10%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -1669,7 +1669,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     text-align: center;
   }
   .intro1 .text h2 {
-    padding: 0.5% 8% 0% 8%;
+    padding: 0.5% 12% 0% 12%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -1739,6 +1739,60 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     font-size: 1.4rem;
     color: var(--clr_accent);
   }
+  /* Button 1 style: Grey text and perimeter */
+  .btn1 {
+    font-size: var(--font_n);
+    padding: 0 15px;
+    border-radius: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--clr_accent);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr_accent);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+    
+  /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 2.2% 6% 10% 37%;
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+    /* width: 110px;
+    height: 25px; */
+  }
+  .btn1:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_primary);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn1:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_primary);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn1:hover {
+    color: var(--clr_dark);
+    border: 1px solid var(--clr_primary);
+    z-index: 1;
+  }
+  .btn1:hover:before {
+    top: 0;
+  }
+
 
 
 
@@ -1802,7 +1856,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 16%;
   } */
   .intro2 .text h1 {
-    padding: 80% 6% 0 6%;
+    padding: 95% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
     /* text-align: center; */
@@ -1889,6 +1943,60 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     font-size: 1.4rem;
     color: var(--clr_accent);
   }
+  /* Button 2 style: White text and perimeter */
+  .btn2 {
+    font-size: var(--font_n);
+    padding: 0 15px;
+    border-radius: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--clr_light);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr_light);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 2.2% 5% 5% 6%;
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+    /* width: 110px;
+    height: 25px; */
+  }
+  .btn2:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_light);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn2:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_light);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn2:hover {
+    color: var(--clr_dark);
+    border: 1px solid var(--clr_light);
+    z-index: 1;
+  }
+  .btn2:hover:before {
+    top: 0;
+  }
+
 
 
 
@@ -1913,7 +2021,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     background-image: url("home\ stay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -300px;
+    background-position: -500px;
     /* background-position-y: bottom; */
     /* background-size: 60%; */
     /* Adjust image left/right */
@@ -1932,7 +2040,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* Note: height is 100% in respect to intro height of 100vh */
     height: 100vh;
     /* Darken the background image so that text are more readable */
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
   }
   .intro3 .text {
     width: 100%;
@@ -2037,6 +2145,59 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     font-size: 1.4rem;
     color: var(--clr_accent);
   }
+  /* Button 3 style: White text and perimeter */
+  .btn3 {
+    font-size: var(--font_n);
+    padding: 0 15px;
+    border-radius: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--clr_light);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr_light);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 2.2% 5% 5% 6%;
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+    /* width: 110px;
+    height: 25px; */
+  }
+  .btn3:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_light);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn3:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_light);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn3:hover {
+    color: var(--clr_dark);
+    border: 1px solid var(--clr_light);
+    z-index: 1;
+  }
+  .btn3:hover:before {
+    top: 0;
+  }
 
 
   /* => Intro 4 */
@@ -2072,7 +2233,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
   .video_bg {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%;
@@ -2093,7 +2254,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* Note: height is 100% in respect to intro height of 100vh */
     height: 100vh;
     /* Darken the background image so that text are more readable */
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
   }
   .intro4 .text {
     width: 100%;
@@ -2109,11 +2270,11 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     background-size: cover;
     position: absolute;
     /* top: 150px; */
-    left: 10%;
-    top: 20%;
+    left: 6%;
+    top: 30%;
   }
   .intro4 .text h1 {
-    padding: 50% 6% 0 6%;
+    padding: 60% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
@@ -2200,6 +2361,59 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     font-size: 1.4rem;
     color: var(--clr_accent);
   }
+  /* Button 4 style: White text and perimeter */
+  .btn4 {
+    font-size: var(--font_n);
+    padding: 0 15px;
+    border-radius: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--clr_light);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr_light);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 2.2% 10% 5% 6%;
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+    /* width: 110px;
+    height: 25px; */
+  }
+  .btn4:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_light);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn4:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_light);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn4:hover {
+    color: var(--clr_dark);
+    z-index: 1;
+  }
+  .btn4:hover:before {
+    top: 0;
+  }
+
 
 
 
@@ -2260,7 +2474,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
       background-repeat: no-repeat;
       background-size: contain;
       /* Adjust image left/right */
-      background-position-x: 85%;
+      background-position-x: 60%;
       /* Adjust image left/right/top/bottom */
       background-position-y: bottom;
   }
@@ -2354,6 +2568,60 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   .footer .copyright p {
     font-size: var(--font_s);
   }
+  /* Button 5 style (for Footer only): White text and perimeter */
+  .btn5 {
+    font-size: var(--font_n);
+    padding: 0 15px;
+    border-radius: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--clr_accent);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr_accent);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 2.2% 5% 10% 6%;
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+    /* width: 110px;
+    height: 25px; */
+  }
+  .btn5:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_primary);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn5:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--clr_primary);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  .btn5:hover {
+    color: var(--clr_dark);
+    border: 1px solid var(--clr_primary);
+    z-index: 1;
+  }
+  .btn5:hover:before {
+    top: 0;
+  }
+
   .social .icon1 {
     font-size: calc(var(--font_n)*2);
     color: var(--clr_accent);
@@ -2381,18 +2649,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     color: var(--clr_primary);
   }
 
-  /* CAN DELETE THIS AFTER TESTING
-  .atomtest {
-    width: 100%;
-    height: 100vh;
-    background-image: url("dog\ cpr.gif");
-    background-repeat: no-repeat;
-    background-size: cover; 
-  } */
 
-
-
-  
 
 
 
