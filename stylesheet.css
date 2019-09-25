@@ -1912,7 +1912,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     background-image: url("home\ stay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: -300px;
     /* background-position-y: bottom; */
     /* background-size: 60%; */
     /* Adjust image left/right */
@@ -1951,7 +1951,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 16%;
   } */
   .intro3 .text h1 {
-    padding: 50% 10% 0 10%;
+    padding: 90% 10% 0 10%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
@@ -2108,11 +2108,11 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     background-size: cover;
     position: absolute;
     /* top: 150px; */
-    left: 6%;
-    top: 11%;
+    left: 10%;
+    top: 20%;
   }
   .intro4 .text h1 {
-    padding: 20% 6% 0 6%;
+    padding: 50% 10% 0 10%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
@@ -2133,7 +2133,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     text-decoration: none;
   }
   .intro4 .text h2 {
-    padding: 0.5% 6% 0% 6%;
+    padding: 0.5% 10% 0% 10%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -2145,7 +2145,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     position: relative;
   }
   .intro4 .text p {
-    padding: 2% 6% 0 6%;
+    padding: 2% 10% 0 10%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
