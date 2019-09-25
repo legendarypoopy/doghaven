@@ -1633,15 +1633,15 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* Image position and size adjustment */
     background-image: url("hero.jpg");
     background-repeat: no-repeat;
-    /* background-size: 106%; */
-    background-size: cover;
+    background-size: 600%;
+    /* background-size: cover; */
     /* Adjust image left/right */
     background-position-x: center;
     /* Adjust image top/bottom */
-    background-position-y: 100px;
+    /* background-position-y: -50px; */
     /* background-position: bottom; */
     /* Adjust image left/right/top/bottom */
-    /* background-position: 400px 100px; */
+    /* background-position: -50px 100px; */
     }
     /* overlay not required for this div bc want  image (hero1) to remain white  */
     /* .overlay1 { */
@@ -1660,7 +1660,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* float: left; */
   }
   .intro1 .text h1 {
-    padding: 13% 6% 0 6%;
+    padding: 25% 6% 0 6%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -1801,10 +1801,10 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 16%;
   } */
   .intro2 .text h1 {
-    padding: 30% 6% 0 6%;
+    padding: 50% 4% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
-    text-align: center;
+    /* text-align: center; */
   }
   .intro2 .text h1 a:link {
     color: var(--clr_light);
@@ -1827,7 +1827,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
-    text-align: center;
+    /* text-align: center; */
   }
   .intro2 .text h3 {
     padding: 8% 7% 0 6%;
