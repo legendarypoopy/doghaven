@@ -2233,7 +2233,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
   .video_bg {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%;
@@ -2252,7 +2252,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* shift the overlay to top/bottom/left/right */
     margin: 0 0% 0 0%;
     /* Note: height is 100% in respect to intro height of 100vh */
-    height: 100vh;
+    height: 100%;
     /* Darken the background image so that text are more readable */
     background: rgba(0, 0, 0, 0.4);
   }
