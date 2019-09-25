@@ -1576,7 +1576,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
+@media (max-width: 911px) {
   #navbar ul,
   #navbar .logo {
     display: none;
@@ -2303,7 +2304,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     color: var(--clr_light);
 
     /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-    padding: 6% 6% 0 6%;
+    padding: 10% 6% 0 6%;
   }
   .secret p {
     /* Adjust only top and bottom. Left and right control in .recognition div */
@@ -2318,7 +2319,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   .footer {
     width: 100%;
     height: auto;
-    background: var(--clr_primary);
+    background: var(--clr_light);
     /* color: var(--clr_accent); */
     
     /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
@@ -2326,7 +2327,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
   }
   .footer .info h1 {
-    padding: 5% 6% 0 6%;
+    padding: 10% 6% 0 6%;
   }
   .footer .info h1 a {
     color: var(--clr_accent);
@@ -2337,12 +2338,12 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
   .footer .info p {
     /* Adjust only top and bottom. Left and right control in .recognition div */
-    padding: 1.5% 6% 0 6%;
-    width: 100%;
+    padding: 1.5% 6% 0% 6%;
+    width: 88%;
   }
   /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
   .footer .copyright {
-    background: var(--clr_dark);
+    background: var(--clr_light);
     color: var(--clr_accent);
     display: flex;
     justify-content: space-between;
