@@ -8,12 +8,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
   <!-- this is for facebook, youtube, map marker icons at footer -->
-  <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
   <title>Dog Haven</title>
 </head>
 
 <body>
-  <nav id="navbar">
+  <!-- <nav id="navbar">
     <a href="#">
       <div class="logo">
       </div>
@@ -26,8 +26,10 @@
       <li><a href="#">Faq</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
-
+    <div class="menu_toggle"><i class="fas fa-bars"></i></div>
+  </nav> -->
+  
+  
 
 
 
@@ -350,7 +352,7 @@
 
 
   <!-- script for auto slider -->
-  <script>
+  <!-- <script>
     var slideIndex = 0;
     showSlides();
     
@@ -365,23 +367,42 @@
       slides[slideIndex-1].style.display = "block";
       setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
-    </script>
+    </script> -->
 
 
 
 
   <!-- /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */ -->
   <script type="text/javascript">
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-100px";
-      }
-      prevScrollpos = currentScrollPos;
-    }  
+
+// CAN'T GET THIS TO WORK
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset = "0") {
+//   // navbar.classList.add("sticky");
+//   document.getElementById("navbar").style.backgroundColor = "red";
+//   } else {
+//   // navbar.classList.remove("sticky");
+//   document.getElementById("navbar").style.backgroundColor = "yellow";
+//   }
+// }
+
+
+
+  // REAL JAVASCRIPT BELOW:
+    // var prevScrollpos = window.pageYOffset;
+    // window.onscroll = function() {
+    //   var currentScrollPos = window.pageYOffset;
+    //   if (prevScrollpos > currentScrollPos) {
+    //     document.getElementById("navbar").style.top = "0";
+    //     // document.getElementById("navbar").style.backgroundColor = "red";
+    //   } else {
+    //     document.getElementById("navbar").style.top = "-100px";
+    //   }
+    //   prevScrollpos = currentScrollPos;
+    // }  
   </script>  
 
 
