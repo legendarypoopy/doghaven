@@ -1615,129 +1615,592 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
   /* => Intro1 */
   .intro1 {
-  /* width: 100%; */
-  height: 80vh;
-  /* position: relative; */
+    /* width: 100%; */
+    height: 80vh;
+    /* position: relative; */
 
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
-  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
-  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
-  /* padding: 10% 5% 10% 5%; */
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+    /* padding: 10% 5% 10% 5%; */
 
-  /* In case need to adjust the WHOLE intro down when not enough space */
-  /* margin: 0px 0 0 0; */
+    /* In case need to adjust the WHOLE intro down when not enough space */
+    /* margin: 0px 0 0 0; */
 
-  /* Just want to see the full height on phone, to toggle off when done */
-  /* background: #eeeeee; */
+    /* Just want to see the full height on phone, to toggle off when done */
+    /* background: #eeeeee; */
 
-  /* Image position and size adjustment */
-  background-image: url("hero.jpg");
-  background-repeat: no-repeat;
-  /* background-size: 106%; */
-  background-size: cover;
-  /* Adjust image left/right */
-  background-position-x: center;
-  /* Adjust image top/bottom */
-  background-position-y: 100px;
-  /* background-position: bottom; */
-  /* Adjust image left/right/top/bottom */
-  /* background-position: 400px 100px; */
-}
-/* overlay not required for this div bc want  image (hero1) to remain white  */
-/* .overlay1 { */
-  /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
-  Therefore, the text need to position relative so they will be visible again */
-  /* position: absolute; */
-  /* width: 100%; */
-  /* Note: height is 100% in respect to intro height of 100vh */
-  /* height: 100vh; */
-  /* Darken the background image so that text are more readable */
-  /* background: rgba(0, 0, 0, 0.4); */
-/* } */
-.intro1 .text {
-  width: 100%;
-  /* height: 600px; */
-  /* float: left; */
-}
-.intro1 .text h1 {
-  padding: 13% 6% 0 6%;
-  color: var(--clr_accent);
-  /* Position relative will make the text visible as there is an overlay above it */
-  position: relative;
-  /* align text to center of the page */
-  text-align: center;
-}
-.intro1 .text h2 {
-  padding: 0.5% 6% 0% 6%;
-  color: var(--clr_accent);
-  /* Position relative will make the text visible as there is an overlay above it */
-  position: relative;
-  /* align text to center of the page */
-  text-align: center;
-}
-.intro1 .text h3 {
-  padding: 2% 6% 0 6%;
-  color: var(--clr_accent);
-  /* Position relative will make the text visible as there is an overlay above it */
-  position: relative;
-  /* align text to center of the page */
-  text-align: center;
-}
-.intro1 .text p {
-  padding: 0.5% 11% 0 11%;
-  color: var(--clr_accent);
-  /* Position relative will make the text visible as there is an overlay above it */
-  position: relative;
-  /* align text to center of the page */
-  text-align: center;
-}
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-.intro1 .mini_nav {
-  /* float: right; */
-  /* width: 10%; */
-  /* height: 100vh; */
- 
-  /* align-items: center; */
-}
-.intro1 .mini_nav ul {
-  /* Float right bc float left is the text */
-  float: right;
-  /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-  display: flex;
-  /* Flex is set to row by default, so need to set as column or else it won't work */
-  flex-direction: column;
-  /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-  height: 100vh;
+    /* Image position and size adjustment */
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 106%; */
+    background-size: cover;
+    /* Adjust image left/right */
+    background-position-x: center;
+    /* Adjust image top/bottom */
+    background-position-y: 100px;
+    /* background-position: bottom; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position: 400px 100px; */
+    }
+    /* overlay not required for this div bc want  image (hero1) to remain white  */
+    /* .overlay1 { */
+    /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
+    Therefore, the text need to position relative so they will be visible again */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* Note: height is 100% in respect to intro height of 100vh */
+    /* height: 100vh; */
+    /* Darken the background image so that text are more readable */
+    /* background: rgba(0, 0, 0, 0.4); */
+    /* } */
+  .intro1 .text {
+    width: 100%;
+    /* height: 600px; */
+    /* float: left; */
+  }
+  .intro1 .text h1 {
+    padding: 13% 6% 0 6%;
+    color: var(--clr_accent);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    /* align text to center of the page */
+    text-align: center;
+  }
+  .intro1 .text h2 {
+    padding: 0.5% 6% 0% 6%;
+    color: var(--clr_accent);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    /* align text to center of the page */
+    text-align: center;
+  }
+  .intro1 .text h3 {
+    padding: 2% 6% 0 6%;
+    color: var(--clr_accent);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    /* align text to center of the page */
+    text-align: center;
+  }
+  .intro1 .text p {
+    padding: 0.5% 11% 0 11%;
+    color: var(--clr_accent);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    /* align text to center of the page */
+    text-align: center;
+  }
+  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
+  .intro1 .mini_nav {
+    /* float: right; */
+    /* width: 10%; */
+    /* height: 100vh; */
+  
+    /* align-items: center; */
+  }
+  .intro1 .mini_nav ul {
+    /* Float right bc float left is the text */
+    float: right;
+    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
+    display: flex;
+    /* Flex is set to row by default, so need to set as column or else it won't work */
+    flex-direction: column;
+    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
+    height: 100vh;
 
-  /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-  Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-  To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-  justify-content: center;
+    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
+    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
+    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
+    justify-content: center;
 
-  /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-  Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-  the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-  go adjust "justify-content: center" and "line-height: 90px" respectively. */
-  padding: 0 3%;
-}
-.intro1 .mini_nav ul li {
-  /* Remove the bullets */
-  list-style: none;
-  /* To align the text in the middle */
-  text-align: center;
+    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
+    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
+    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
+    go adjust "justify-content: center" and "line-height: 90px" respectively. */
+    padding: 0 3%;
+  }
+  .intro1 .mini_nav ul li {
+    /* Remove the bullets */
+    list-style: none;
+    /* To align the text in the middle */
+    text-align: center;
 
-  /* Just for me to check the vertical box of this .mini_nav    */
-  /* background: yellow; */
-}
-.intro1 .mini_nav ul li a {
-  /* Remove the underline */
-  text-decoration: none;
-  /* color: yellow; */
-  /* To control the height spacing in between the nav symbols  */
-  line-height: 80px;
-  font-size: 1.4rem;
-  color: var(--clr_accent);
-}
+    /* Just for me to check the vertical box of this .mini_nav    */
+    /* background: yellow; */
+  }
+  .intro1 .mini_nav ul li a {
+    /* Remove the underline */
+    text-decoration: none;
+    /* color: yellow; */
+    /* To control the height spacing in between the nav symbols  */
+    line-height: 80px;
+    font-size: 1.4rem;
+    color: var(--clr_accent);
+  }
+
+
+
+  /* => Intro 2 */
+  .intro2 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+    /* padding: 10% 5% 10% 5%; */
+
+    /* In case need to adjust the WHOLE intro down when not enough space */
+    /* margin: 0px 0 0 0; */
+
+    /* Just want to see the full height on phone, to toggle off when done */
+    /* background: #eeeeee; */
+
+    /* Image position and size adjustment */
+    background-image: url("grooming\ course.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* background-position-y: bottom; */
+    /* background-size: 60%; */
+    /* Adjust image left/right */
+    /* background-position-x: 90%; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position: 400px 100px; */
+  }
+  .overlay2 {
+    /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
+    Therefore, the text need to position relative so they will be visible again */
+    position: absolute;
+    /* width of overylay */
+    width: 100%;
+    /* shift the overlay to the right */
+    /* margin: 0 0% 0 50%; */
+    /* Note: height is 100% in respect to intro height of 100vh */
+    height: 100vh;
+    /* Darken the background image so that text are more readable */
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .intro2 .text {
+    width: 100%;
+    /* height: 100vh; */
+    /* float: left; */
+  }
+  /* logo not required for this div
+  .intro2 .text .dfa_logo {
+    width: 33px;
+    height: 33px;
+
+    background-image: url("dfa\ logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 60%;
+    top: 16%;
+  } */
+  .intro2 .text h1 {
+    padding: 30% 6% 0 6%;
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    text-align: center;
+  }
+  .intro2 .text h1 a:link {
+    color: var(--clr_light);
+    text-decoration: none;
+  }
+  .intro2 .text h1 a:visited {
+    color: var(--clr_light);
+    text-decoration: none;
+  }
+  .intro2 .text h1 a:hover {
+    color: var(--clr_primary);
+    text-decoration: none;
+  }
+  .intro2 .text h1 a:active {
+    color: var(--clr_dark);
+    text-decoration: none;
+  }
+  .intro2 .text h2 {
+    padding: 0.5% 6% 0% 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    text-align: center;
+  }
+  .intro2 .text h3 {
+    padding: 8% 7% 0 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro2 .text p {
+    padding: 2% 7% 0 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
+  .intro2 .mini_nav {
+    /* float: right; */
+    /* width: 10%; */
+    /* height: 100vh; */
+  
+    /* align-items: center; */
+  }
+  .intro2 .mini_nav ul {
+    /* Float right bc float left is the text */
+    float: right;
+    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
+    display: flex;
+    /* Flex is set to row by default, so need to set as column or else it won't work */
+    flex-direction: column;
+    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
+    height: 100vh;
+
+    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
+    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
+    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
+    justify-content: center;
+
+    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
+    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
+    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
+    go adjust "justify-content: center" and "line-height: 90px" respectively. */
+    padding: 0 3%;
+  }
+  .intro2 .mini_nav ul li {
+    /* Remove the bullets */
+    list-style: none;
+    /* To align the text in the middle */
+    text-align: center;
+
+    /* Just for me to check the vertical box of this .mini_nav    */
+    /* background: yellow; */
+  }
+  .intro2 .mini_nav ul li a {
+    /* Remove the underline */
+    text-decoration: none;
+    /* color: yellow; */
+    /* To control the height spacing in between the nav symbols  */
+    line-height: 80px;
+    font-size: 1.4rem;
+    color: var(--clr_accent);
+  }
+
+
+
+  /* => Intro 3 */
+  .intro3 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+    /* padding: 10% 5% 10% 5%; */
+
+    /* In case need to adjust the WHOLE intro down when not enough space */
+    /* margin: 0px 0 0 0; */
+
+    /* Just want to see the full height on phone, to toggle off when done */
+    /* background: #eeeeee; */
+
+    /* Image position and size adjustment */
+    background-image: url("home\ stay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-position-y: bottom; */
+    /* background-size: 60%; */
+    /* Adjust image left/right */
+    /* background-position-x: 90%; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position: 400px 100px; */
+  }
+  .overlay3 {
+    /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
+    Therefore, the text need to position relative so they will be visible again */
+    position: absolute;
+    /* width of overylay */
+    width: 100%;
+    /* shift the overlay to the right */
+    /* margin: 0 0% 0 50%; */
+    /* Note: height is 100% in respect to intro height of 100vh */
+    height: 100vh;
+    /* Darken the background image so that text are more readable */
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .intro3 .text {
+    width: 100%;
+    /* height: 100vh; */
+    /* float: left; */
+  }
+  /* logo not required for this div
+  .intro3 .text .dfa_logo {
+    width: 33px;
+    height: 33px;
+
+    background-image: url("dfa\ logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 60%;
+    top: 16%;
+  } */
+  .intro3 .text h1 {
+    padding: 30% 7% 0 6%;
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro3 .text h1 a:link {
+    color: var(--clr_light);
+    text-decoration: none;
+  }
+  .intro3 .text h1 a:visited {
+    color: var(--clr_light);
+    text-decoration: none;
+  }
+  .intro3 .text h1 a:hover {
+    color: var(--clr_primary);
+    text-decoration: none;
+  }
+  .intro3 .text h1 a:active {
+    color: var(--clr_dark);
+    text-decoration: none;
+  }
+  .intro3 .text h2 {
+    padding: 0.5% 45% 0% 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro3 .text h3 {
+    padding: 8% 7% 0 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro3 .text p {
+    padding: 2% 7% 0 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
+  .intro3 .mini_nav {
+    /* float: right; */
+    /* width: 10%; */
+    /* height: 100vh; */
+  
+    /* align-items: center; */
+  }
+  .intro3 .mini_nav ul {
+    /* Float right bc float left is the text */
+    float: right;
+    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
+    display: flex;
+    /* Flex is set to row by default, so need to set as column or else it won't work */
+    flex-direction: column;
+    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
+    height: 100vh;
+
+    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
+    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
+    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
+    justify-content: center;
+
+    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
+    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
+    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
+    go adjust "justify-content: center" and "line-height: 90px" respectively. */
+    padding: 0 3%;
+  }
+  .intro3 .mini_nav ul li {
+    /* Remove the bullets */
+    list-style: none;
+    /* To align the text in the middle */
+    text-align: center;
+
+    /* Just for me to check the vertical box of this .mini_nav    */
+    /* background: yellow; */
+  }
+  .intro3 .mini_nav ul li a {
+    /* Remove the underline */
+    text-decoration: none;
+    /* color: yellow; */
+    /* To control the height spacing in between the nav symbols  */
+    line-height: 80px;
+    font-size: 1.4rem;
+    color: var(--clr_accent);
+  }
+
+
+  /* => Intro 4 */
+  .intro4 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+    /* padding: 10% 5% 10% 5%; */
+
+    /* In case need to adjust the WHOLE intro down when not enough space */
+    /* margin: 0px 0 0 0; */
+
+    /* Just want to see the full height on phone, to toggle off when done */
+    /* background: var(--clr_primary); */
+
+    /* Image position and size adjustment */
+    /* background-image: url("DFA\ yahoo\ video\ segment.mp4"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* this will shift the entire image down so as to avoid the nav bar from blocking the image at the top */
+    /* background-position-y: -51%; */
+    /* background-position: top; */
+    /* background-size: 60%; */
+    /* Adjust image left/right */
+    /* background-position-x: 90%; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position: 400px 100px; */
+  }
+  .video_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /* if you want to center the video no matter how you resize, change the top and left to 50%, and transform: translate(-50%, -50%)  
+    else, set top and left as 0, remove the transform*/
+    /* transform: translate(-50%, -50%) */
+    /* filter to enahnce the video color */
+    -webkit-filter: contrast(120%);filter: contrast(130%);
+  }
+  .overlay4 {
+    /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
+    Therefore, the text need to position relative so they will be visible again */
+    position: absolute;
+    /* width of overylay */
+    width: 100%;
+    /* shift the overlay to top/bottom/left/right */
+    margin: 0 0% 0 0%;
+    /* Note: height is 100% in respect to intro height of 100vh */
+    height: 100vh;
+    /* Darken the background image so that text are more readable */
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .intro4 .text {
+    width: 100%;
+    /* height: 100vh; */
+    /* float: left; */
+  }
+  .intro4 .text .dfa_logo {
+    width: 33px;
+    height: 33px;
+
+    background-image: url("dfa\ logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* top: 150px; */
+    left: 6%;
+    top: 11%;
+  }
+  .intro4 .text h1 {
+    padding: 20% 6% 0 6%;
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro4 .text h1 a:link {
+    color: var(--clr_light);
+    text-decoration: none;
+  }
+  .intro4 .text h1 a:visited {
+    color: var(--clr_light);
+    text-decoration: none;
+  }
+  .intro4 .text h1 a:hover {
+    color: var(--clr_primary);
+    text-decoration: none;
+  }
+  .intro4 .text h1 a:active {
+    color: var(--clr_dark);
+    text-decoration: none;
+  }
+  .intro4 .text h2 {
+    padding: 0.5% 6% 0% 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro4 .text h3 {
+    padding: 8% 7% 0 60%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+  }
+  .intro4 .text p {
+    padding: 2% 6% 0 6%;
+    color: var(--clr_light);
+    /* Position relative will make the text visible as there is an overlay above it */
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
+  .intro4 .mini_nav {
+    /* float: right; */
+    /* width: 10%; */
+    /* height: 100vh; */
+  
+    /* align-items: center; */
+  }
+  .intro4 .mini_nav ul {
+    /* Float right bc float left is the text */
+    float: right;
+    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
+    display: flex;
+    /* Flex is set to row by default, so need to set as column or else it won't work */
+    flex-direction: column;
+    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
+    height: 100vh;
+
+    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
+    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
+    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
+    justify-content: center;
+
+    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
+    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
+    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
+    go adjust "justify-content: center" and "line-height: 90px" respectively. */
+    padding: 0 3%;
+  }
+  .intro4 .mini_nav ul li {
+    /* Remove the bullets */
+    list-style: none;
+    /* To align the text in the middle */
+    text-align: center;
+
+    /* Just for me to check the vertical box of this .mini_nav    */
+    /* background: yellow; */
+  }
+  .intro4 .mini_nav ul li a {
+    /* Remove the underline */
+    text-decoration: none;
+    /* color: yellow; */
+    /* To control the height spacing in between the nav symbols  */
+    line-height: 80px;
+    font-size: 1.4rem;
+    color: var(--clr_accent);
+  }
+
+
 
 
 
