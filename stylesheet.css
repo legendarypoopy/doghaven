@@ -1636,9 +1636,9 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* background-size: 106%; */
   background-size: cover;
   /* Adjust image left/right */
-  /* background-position-x: center; */
+  background-position-x: center;
   /* Adjust image top/bottom */
-  /* background-position-y: 50%; */
+  background-position-y: 100px;
   /* background-position: bottom; */
   /* Adjust image left/right/top/bottom */
   /* background-position: 400px 100px; */
@@ -1660,7 +1660,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* float: left; */
 }
 .intro1 .text h1 {
-  padding: 33% 6% 0 6%;
+  padding: 13% 6% 0 6%;
   color: var(--clr_accent);
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
