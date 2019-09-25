@@ -1660,7 +1660,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* float: left; */
   }
   .intro1 .text h1 {
-    padding: 85% 6% 0 6%;
+    padding: 85% 10% 0 10%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -1801,7 +1801,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 16%;
   } */
   .intro2 .text h1 {
-    padding: 50% 4% 0 6%;
+    padding: 80% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
     /* text-align: center; */
@@ -1830,13 +1830,13 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* text-align: center; */
   }
   .intro2 .text h3 {
-    padding: 8% 7% 0 6%;
+    padding: 8% 6% 0 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
   .intro2 .text p {
-    padding: 2% 7% 0 6%;
+    padding: 2% 6% 0 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -1951,7 +1951,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 16%;
   } */
   .intro3 .text h1 {
-    padding: 90% 10% 0 10%;
+    padding: 90% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
@@ -1972,13 +1972,13 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     text-decoration: none;
   }
   .intro3 .text h2 {
-    padding: 0.5% 45% 0% 10%;
+    padding: 0.5% 45% 0% 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
   .intro3 .text h3 {
-    padding: 8% 7% 0 6%;
+    padding: 8% 6% 0 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -2112,7 +2112,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 20%;
   }
   .intro4 .text h1 {
-    padding: 50% 10% 0 10%;
+    padding: 50% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
@@ -2133,7 +2133,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     text-decoration: none;
   }
   .intro4 .text h2 {
-    padding: 0.5% 10% 0% 10%;
+    padding: 0.5% 6% 0% 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -2145,7 +2145,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     position: relative;
   }
   .intro4 .text p {
-    padding: 2% 10% 0 10%;
+    padding: 2% 6% 0 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -2207,7 +2207,187 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
+  /* What do we do section */
+  .objective {
+    /* Just want to see the full height on phone, to toggle off when done */
+    /* margin: 100px 0 0 0; */
 
+    width: 100%;
+    height: auto;
+
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+    
+    background: var(--clr_light);
+
+      /* Image position and size adjustment */
+      /* background-image: url("GR1.jpg"); */
+      /* background-repeat: no-repeat; */
+      /* background-size: 32%; */
+      /* Adjust image left/right */
+      /* background-position-x: 85%; */
+      /* Adjust image left/right/top/bottom */
+      /* background-position-y: bottom; */
+
+      /* background-position: 400px 100px; */ 
+      /* background-size: cover; */
+  }
+  .objective .objective_text {
+    width: 100%;
+    /* height: 600px; */
+    /* float: left;   */
+  }
+  .objective h1 {
+    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+    color: var(--clr_accent);
+
+    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+    padding: 10% 6% 0 6%;
+  }
+  .objective p {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 3% 6% 6% 6%;
+    
+    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+    color: var(--clr_accent);
+  }
+  .divider1_image_on_mobile {
+      /* Image position and size adjustment */
+      height: 300px;
+      background-image: url("GR1.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* Adjust image left/right */
+      background-position-x: 85%;
+      /* Adjust image left/right/top/bottom */
+      background-position-y: bottom;
+  }
+
+
+
+  /* What's our secret section */
+  .secret {
+    /* Just want to see the full height on phone, to toggle off when done */
+    /* margin: 100px 0 0 0; */
+
+    width: 100%;
+    height: auto;
+    
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+    
+    background: var(--clr_dark);
+    
+      /* Image position and size adjustment */
+      /* background-image: url("cat-window-flipped.jpg"); */
+      /* background-repeat: no-repeat; */
+      /* background-size: cover; */
+      /* background-size: 35%; */
+
+      /* Adjust image left/right/top/bottom */
+      /* Adjust image left/right */
+      /* background-position: left; */
+      /* background-position: 400px 100px; */
+      /* background-position-x: 9%; */
+      /* background-position-y: bottom; */
+  }
+  .secret .secret_text {
+    width: 100%;
+    /* height: 600px; */
+    /* float: left;   */
+  }
+  .secret h1 {
+    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+    color: var(--clr_light);
+
+    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+    padding: 6% 6% 0 6%;
+  }
+  .secret p {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 3% 6% 6% 6%;
+    
+    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+    color: var(--clr_light);
+  }
+
+
+  /* => Footer section  */
+  .footer {
+    width: 100%;
+    height: auto;
+    background: var(--clr_primary);
+    /* color: var(--clr_accent); */
+    
+    /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+    Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+    All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  }
+  .footer .info h1 {
+    padding: 5% 6% 0 6%;
+  }
+  .footer .info h1 a {
+    color: var(--clr_accent);
+    text-decoration: none;
+  }
+  .footer .info h1 a:hover {
+    color: var(--clr_primary);
+  }
+  .footer .info p {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 1.5% 6% 0 6%;
+    width: 100%;
+  }
+  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
+  .footer .copyright {
+    background: var(--clr_dark);
+    color: var(--clr_accent);
+    display: flex;
+    justify-content: space-between;
+    /* NOTE: to adjust copyright text top and bottom gap here */
+    padding: 1% 6% 0% 6%;
+    align-items: center;
+  }
+  .footer .copyright p {
+    font-size: var(--font_s);
+  }
+  .social .icon1 {
+    font-size: calc(var(--font_n)*2);
+    color: var(--clr_accent);
+    /* NOTE: to adjust social icon top/bottom/left/right gap here */
+    padding: 0 10px 7% 0;
+  }
+  .social .icon1:hover {
+    color: var(--clr_primary);
+  }
+  .social .icon2 {
+    font-size: calc(var(--font_n)*2);
+    color: var(--clr_accent);
+    /* NOTE: to adjust social icon top/bottom/left/right gap here */
+    padding: 0 10px 7% 0;
+  }
+  .social .icon2:hover {
+    color: var(--clr_primary);
+  }
+  .social .icon3 {
+    font-size: calc(var(--font_n)*2);
+    color: var(--clr_accent);
+    padding:0 0 7% 0;
+  }
+  .social .icon3:hover {
+    color: var(--clr_primary);
+  }
+
+  /* CAN DELETE THIS AFTER TESTING
+  .atomtest {
+    width: 100%;
+    height: 100vh;
+    background-image: url("dog\ cpr.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+  } */
 
 
 
