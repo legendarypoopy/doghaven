@@ -1951,7 +1951,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     top: 16%;
   } */
   .intro3 .text h1 {
-    padding: 30% 7% 0 6%;
+    padding: 50% 10% 0 10%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
@@ -1972,7 +1972,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     text-decoration: none;
   }
   .intro3 .text h2 {
-    padding: 0.5% 45% 0% 6%;
+    padding: 0.5% 45% 0% 10%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
