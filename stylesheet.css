@@ -1615,14 +1615,14 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* background: #eeeeee; */
 
     /* Image position and size adjustment */
-    background-image: url("hero.jpg");
-    background-repeat: no-repeat;
-    background-size: 580%;
+    /* background-image: url("hero.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 580%; */
     /* background-size: cover; */
     /* Adjust image left/right */
-    background-position-x: 48.5%;
+    /* background-position-x: 48.5%; */
     /* Adjust image top/bottom */
-    background-position-y: 71%;
+    /* background-position-y: 71%; */
     /* background-position: bottom; */
     /* Adjust image left/right/top/bottom */
     /* background-position: -50px 100px; */
@@ -1638,13 +1638,24 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* Darken the background image so that text are more readable */
     /* background: rgba(0, 0, 0, 0.4); */
     /* } */
+    .container_image_on_mobile1 {
+      height: 400px;
+      background-image: url("hero.jpg");
+      background-repeat: no-repeat;
+      background-size: 580%;
+      /* Adjust image left/right */
+      background-position-x: 48.5%;
+      /* Adjust image top/bottom */
+      background-position-y: 40%;
+    }
   .intro1 .text {
     width: 100%;
     /* height: 600px; */
     /* float: left; */
   }
+
   .intro1 .text h1 {
-    padding: 117% 10% 0 10%;
+    padding: 5% 10% 0 10%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -1739,7 +1750,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     transition: .3s;
     
   /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-    margin: 2.2% 6% 10% 37%;
+    margin: 2.2% 6% 10% 33%;
+    /* left: -11%; */
 
   /* Below not required after i added padding to give equal left and right spacing regardless of text length */
     /* width: 110px;
@@ -1818,7 +1830,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* shift the overlay to the right */
     /* margin: 0 0% 0 50%; */
     /* Note: height is 100% in respect to intro height of 100vh */
-    height: 100vh;
+    height: 100%;
     /* Darken the background image so that text are more readable */
     background: rgba(0, 0, 0, 0.3);
   }
@@ -1987,7 +1999,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* => Intro 3 */
   .intro3 {
     width: 100%;
-    height: 80vh;
+    height: 700px;
     position: relative;
 
     /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
@@ -2022,7 +2034,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* shift the overlay to the right */
     /* margin: 0 0% 0 50%; */
     /* Note: height is 100% in respect to intro height of 100vh */
-    height: 100vh;
+    height: 100%;
     /* Darken the background image so that text are more readable */
     background: rgba(0, 0, 0, 0.4);
   }
@@ -2187,7 +2199,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* => Intro 4 */
   .intro4 {
     width: 100%;
-    height: 80vh;
+    height: 700px;
     position: relative;
     overflow: hidden;
 
@@ -2252,13 +2264,14 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     background-image: url("dfa\ logo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: relative;
     /* top: 150px; */
-    left: 6%;
-    top: 30%;
+    /* left: 6%;
+    top: 30%; */
+    margin: 40% 0% 1% -53.1%;
   }
   .intro4 .text h1 {
-    padding: 60% 6% 0 6%;
+    padding: 0% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
