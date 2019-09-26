@@ -302,6 +302,60 @@ nav ul li a:hover {
   /* align text to center of the page */
   text-align: center;
 }
+/* Button 1 style: Grey text and perimeter */
+.btn1 {
+  font-size: var(--font_n);
+  padding: 0 15px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_accent);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_accent);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  
+/* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 1.2% 6% 10% 44%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn1:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_primary);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn1:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_primary);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn1:hover {
+  color: var(--clr_dark);
+  border: 1px solid var(--clr_primary);
+  z-index: 1;
+}
+.btn1:hover:before {
+  top: 0;
+}
+
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
 .intro1 .mini_nav {
   /* float: right; */
@@ -451,6 +505,60 @@ nav ul li a:hover {
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
+/* Button 2 style: White text and perimeter */
+.btn2 {
+  font-size: var(--font_n);
+  padding: 0 15px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_light);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_light);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 1.2% 5% 5% 6%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn2:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn2:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn2:hover {
+  color: var(--clr_dark);
+  border: 1px solid var(--clr_light);
+  z-index: 1;
+}
+.btn2:hover:before {
+  top: 0;
+}
+
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
 .intro2 .mini_nav {
   /* float: right; */
@@ -601,6 +709,60 @@ nav ul li a:hover {
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
+/* Button 3 style: White text and perimeter */
+.btn3 {
+  font-size: var(--font_n);
+  padding: 0 15px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_light);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_light);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 1.2% 5% 5% 6%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn3:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn3:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn3:hover {
+  color: var(--clr_dark);
+  border: 1px solid var(--clr_light);
+  z-index: 1;
+}
+.btn3:hover:before {
+  top: 0;
+}
+
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
 .intro3 .mini_nav {
   /* float: right; */
@@ -764,6 +926,59 @@ nav ul li a:hover {
   max-height: 200px;
   overflow: hidden;
 }
+/* Button 4 style: White text and perimeter */
+.btn4 {
+  font-size: var(--font_n);
+  padding: 0 15px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_light);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_light);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 1.2% 10% 5% 60%;
+
+/* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn4:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn4:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn4:hover {
+  color: var(--clr_dark);
+  z-index: 1;
+}
+.btn4:hover:before {
+  top: 0;
+}
+
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
 .intro4 .mini_nav {
   /* float: right; */
@@ -1156,7 +1371,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 .objective p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
-  padding: 3% 51% 6% 6%;
+  padding: 3% 55% 6% 6%;
   
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_accent);
@@ -1206,7 +1421,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 .secret p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
-  padding: 3% 6% 6% 48%;
+  padding: 3% 10% 6% 48%;
   
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_light);
@@ -1241,284 +1456,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   padding: 1.5% 0% 0 6%;
   width: 450px;
 }
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
-.footer .copyright {
-  background: var(--clr_light);
-  color: var(--clr_accent);
-  display: flex;
-  justify-content: space-between;
-  /* NOTE: to adjust copyright text top and bottom gap here */
-  padding: 1% 6% 0% 6%;
-  align-items: center;
-}
-.footer .copyright p {
-  font-size: var(--font_s);
-}
-.social .icon1 {
-  font-size: calc(var(--font_n)*2);
-  color: var(--clr_accent);
-  /* NOTE: to adjust social icon top/bottom/left/right gap here */
-  padding: 0 10px 7% 0;
-}
-.social .icon1:hover {
-  color: var(--clr_primary);
-}
-.social .icon2 {
-  font-size: calc(var(--font_n)*2);
-  color: var(--clr_accent);
-  /* NOTE: to adjust social icon top/bottom/left/right gap here */
-  padding: 0 10px 7% 0;
-}
-.social .icon2:hover {
-  color: var(--clr_primary);
-}
-.social .icon3 {
-  font-size: calc(var(--font_n)*2);
-  color: var(--clr_accent);
-  padding:0 0 7% 0;
-}
-.social .icon3:hover {
-  color: var(--clr_primary);
-}
-
-/* CAN DELETE THIS AFTER TESTING
-.atomtest {
-  width: 100%;
-  height: 100vh;
-  background-image: url("dog\ cpr.gif");
-  background-repeat: no-repeat;
-  background-size: cover; 
-} */
-
-
-
-/* Button 1 style: Grey text and perimeter */
-.btn1 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_accent);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_accent);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-  
-/* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 1.2% 6% 10% 44%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn1:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_primary);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn1:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_primary);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn1:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_primary);
-  z-index: 1;
-}
-.btn1:hover:before {
-  top: 0;
-}
-
-
-/* Button 2 style: White text and perimeter */
-.btn2 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_light);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_light);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 1.2% 5% 5% 6%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn2:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn2:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn2:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_light);
-  z-index: 1;
-}
-.btn2:hover:before {
-  top: 0;
-}
-
-
-
-
-
-/* Button 3 style: White text and perimeter */
-.btn3 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_light);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_light);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 1.2% 5% 5% 6%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn3:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn3:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn3:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_light);
-  z-index: 1;
-}
-.btn3:hover:before {
-  top: 0;
-}
-
-
-
-
-
-
-
-/* Button 4 style: White text and perimeter */
-.btn4 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_light);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_light);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 1.2% 10% 5% 60%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn4:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn4:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn4:hover {
-  color: var(--clr_dark);
-  z-index: 1;
-}
-.btn4:hover:before {
-  top: 0;
-}
-
-
 /* Button 5 style (for Footer only): White text and perimeter */
 .btn5 {
   font-size: var(--font_n);
@@ -1574,8 +1511,52 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 
 
+/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
+.footer .copyright {
+  background: var(--clr_light);
+  color: var(--clr_accent);
+  display: flex;
+  justify-content: space-between;
+  /* NOTE: to adjust copyright text top and bottom gap here */
+  padding: 1% 6% 0% 6%;
+  align-items: center;
+}
+.footer .copyright p {
+  font-size: var(--font_s);
+}
+.social .icon1 {
+  font-size: calc(var(--font_n)*2);
+  color: var(--clr_accent);
+  /* NOTE: to adjust social icon top/bottom/left/right gap here */
+  padding: 0 10px 7% 0;
+}
+.social .icon1:hover {
+  color: var(--clr_primary);
+}
+.social .icon2 {
+  font-size: calc(var(--font_n)*2);
+  color: var(--clr_accent);
+  /* NOTE: to adjust social icon top/bottom/left/right gap here */
+  padding: 0 10px 7% 0;
+}
+.social .icon2:hover {
+  color: var(--clr_primary);
+}
+.social .icon3 {
+  font-size: calc(var(--font_n)*2);
+  color: var(--clr_accent);
+  padding:0 0 7% 0;
+}
+.social .icon3:hover {
+  color: var(--clr_primary);
+}
+
+/* END OF DESKTOP MODE */
 
 
+
+
+/* START OF MOBILE MODE */
 /* @media (max-width: 767px) { */
 @media (max-width: 911px) {
   #navbar ul,
@@ -1617,7 +1598,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* => Intro1 */
   .intro1 {
     /* width: 100%; */
-    height: 80vh;
+    height: 700px;
     /* position: relative; */
 
     /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
@@ -1637,9 +1618,9 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     background-size: 550%;
     /* background-size: cover; */
     /* Adjust image left/right */
-    background-position-x: -970px;
+    background-position-x: -990px;
     /* Adjust image top/bottom */
-    background-position-y: -290px;
+    background-position-y: -310px;
     /* background-position: bottom; */
     /* Adjust image left/right/top/bottom */
     /* background-position: -50px 100px; */
@@ -1661,7 +1642,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* float: left; */
   }
   .intro1 .text h1 {
-    padding: 105% 10% 0 10%;
+    padding: 97% 10% 0 10%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
