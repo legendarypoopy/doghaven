@@ -2414,6 +2414,168 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
+  .news_all {
+    width: 100%;
+    height: 850px;
+    /* min-height: 530px; */
+    /* background: var(--clr_primary); */
+    /* background: var(--clr_shade); */
+    /* background: red; */
+    /* z-index: -2; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    /* justify-self: center; */
+  
+    /* this will bring the box below if width gets smaller in mobile 
+    but without this is fine as will do a media query for mobile*/
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+    /* margin: 0 6% 0% 6%; */
+    /* margin: 7%; */
+    /* left: 6%; */
+  }
+  .news1 {
+    display: block;
+    /* position: relative; */
+    /* float: left; */
+    /* 50% each for news1 and news2 */
+    width: 88%;
+    height: 333px;
+    padding: 0px 0px 0px 0%;
+    margin: 0% 6% 0 6%;
+    background: var(--clr_primary);
+    /* note sure if is correct, can delete if wrg: this left&right margin will make the box align properly when in mobile  */
+    /* background: rgba(0, 0, 0, 0.5); */
+  }
+  .news1_link:link {
+    color: var(--clr_accent);
+    text-decoration: none;
+  }
+  .news1_link:visited {
+    color: var(--clr_accent);
+    text-decoration: none;
+  }
+  .news1_link:hover {
+    /* background-color: red; */
+    /* z-index: -991; */
+    color: var(--clr_primary);
+    text-decoration: none;
+    /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
+    /* -webkit-filter: opacity(50%);filter: opacity(50%); */
+  }
+  .news1_link:active {
+    color: var(--clr_dark);
+    text-decoration: none;
+  }
+  .container_image1 {
+    min-height: 80%;
+    /* background: green; */
+    position: relative;
+    overflow: hidden;
+    /* rgba doesn't work unless background color is removed :(  */
+    /* background: rgba(0, 0, 0, 0.5); */
+  }
+  .video_okto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    /* height: 100%; */
+    /* if you want to center the video no matter how you resize, change the top and left to 50%, and transform: translate(-50%, -50%)  
+    else, set top and left as 0, remove the transform*/
+    transform: translate(-50%, -50%);
+    /* filter to enahnce the video color */
+    -webkit-filter: contrast(150%);filter: contrast(130%);
+  }
+  /* .video_okto:hover {
+    height: 125%;
+    -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green);
+  } */
+  .container_text1 {
+    /* display: block; */
+    position: relative;
+    width: 100%;
+    min-height: 20%;
+    background: var(--clr_light);
+    /* margin: 0 0px 0 0; */
+  }
+  .container_text1 h3 {
+    padding: 17px 0 0 17px;
+  }
+  .container_text1 p {
+    padding: 3px 17px 15px 17px;
+  }
+  
+  .news2 {
+    display: block;
+    /* position: relative; */
+    /* float: left; */
+    /* 50% each for news1 and news2 */  
+    width: 88%;
+    height: 333px;
+    padding: 0px 0px 0px 0px;
+    margin: 20% 6% 0 6%;
+    background: yellowgreen;
+    /* note sure if is correct, can delete if wrg: this left&right margin will make the box align properly when in mobile  */
+    /* background: purple; */
+  }
+  .news2_link:link {
+    color: var(--clr_accent);
+    text-decoration: none;
+  }
+  .news2_link:visited {
+    color: var(--clr_accent);
+    text-decoration: none;
+  }
+  .news2_link:hover {
+    /* background-color: red; */
+    /* z-index: -991; */
+    color: var(--clr_primary);
+    text-decoration: none;
+    /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
+    /* -webkit-filter: opacity(50%);filter: opacity(50%); */
+  }
+  .news2_link:active {
+    color: var(--clr_dark);
+    text-decoration: none;
+  }
+  .container_image2 {
+    background: none;
+    min-height: 80%;
+    background: #0C2B57;
+    background: url("straits-times.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    /* background-position-y: bottom; */
+    /* Adjust image left/right */
+    /* background-position-x: 90%; */
+    /* Adjust image left/right/top/bottom */
+  
+    /* this margin should be useful in mobile to separte okto and straits times vertical top and bottom spacing */
+    /* not req'd for desktop */
+    /* margin: 10px 0 0 0px; */
+  }
+  .container_text2 {
+    /* position: relative; */
+    width: 100%;
+    min-height: 20%;
+    background: var(--clr_light);
+    /* margin: 0 0 0 0px;   */
+  }
+  .container_text2 h3 {
+    padding: 17px 0 0 17px;
+  }
+  .container_text2 p {
+    padding: 3px 17px 15px 17px;
+  }
+
+
+
+
+
 
 
 
