@@ -1655,7 +1655,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
 
   .intro1 .text h1 {
-    padding: 5% 10% 0 10%;
+    padding: 0% 10% 0 10%;
     color: var(--clr_accent);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
