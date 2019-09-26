@@ -2412,11 +2412,23 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
 
 
-
+  /* News section */
+  .news_title {
+    /* background: var(--clr_primary); */
+    background: #F3F3F3;
+    width: 100%;
+  }
+  .news_title h1 {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 10% 6% 6% 6%;
+    
+    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+    color: var(--clr_accent);
+  }  
 
   .news_all {
     width: 100%;
-    height: 850px;
+    height: 890px;
     /* min-height: 530px; */
     /* background: var(--clr_primary); */
     /* background: var(--clr_shade); */
