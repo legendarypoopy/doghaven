@@ -1569,7 +1569,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 /* START OF MOBILE MODE */
 /* @media (max-width: 767px) { */
 @media (max-width: 600px) {
-  /* .menu_toggle {
+  .menu_toggle {
     position: absolute;
     display: block;
     padding: 6px 11px;
@@ -1577,7 +1577,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     font-size: var(--font_m);
     top: 0;
     right: 0;
-  } */
+  }
   /* margin: 0; */
 
 
@@ -1589,32 +1589,38 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     margin: 50px 0;
   } */
   #navbar {
-    flex-direction: column;
     /* background: var(--clr_dark); */
     /* height: 100vh; */
     /* display: flex; */
+    flex-direction: column;
+    background: var(--clr_light);
     }
   #logo {
-    padding: 3% 3%;
+    /* padding: 10px; */
+    /* margin: 150px 0; */
     /* align-self: left; */
     /* background: orange; */
+  }
+  #logo:hover {
+    background-image: rgba(0, 0, 0, 0.3);
   }
   #navbar ul {
     flex-direction: column;
     /* display: block; */
     font-size: calc(var(--font_m) * 1.8);
     width: 100%;
-
     /* text-align: center; */
     /* height: 100px; */
     /* top: 0; */
+    margin: 6% 0 0 0;
+    /* background: red; */
   }
   #navbar ul li a {
     /* width: 100%; */
     /* align-self: center; */
     /* text-align: left; */
     /* color: var(--clr_accent); */
-    padding: 2% 5%;
+    padding: 3% 6%;
     
   }
   #navbar ul li a:hover {
