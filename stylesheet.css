@@ -61,7 +61,8 @@ nav {
   min-height: var(--font_n);
   font-size: var(--font_n);
   font-weight: bold;
-  background: var(--clr_light);
+  /* this backgroundcolor is not required as using JS to change the color when scrolling down */
+  /* background: var(--clr_light); */
   /* backgrd color helps to differential what to adjust on */
   /* background: tomato; */
   /* opacity: 0.6; */
@@ -97,6 +98,8 @@ nav ul li a {
   padding: 16px 18px 16px 18px;
   /* backgrd color helps to differential what to adjust on */
   /* background: yellow; */
+  /* text will not jump to next line if no space for it */
+  white-space: nowrap;  
 }
 nav ul li a:hover {
   color: var(--clr_primary);
@@ -265,6 +268,10 @@ nav ul li a:hover {
   /* Darken the background image so that text are more readable */
   /* background: rgba(0, 0, 0, 0.4); */
 /* } */
+/* .intro1 .overlay1 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent, transparent);
+} */
 .intro1 .text {
   width: 100%;
   /* height: 600px; */
@@ -845,7 +852,8 @@ nav ul li a:hover {
 }
 .video_bg {
   position: absolute;
-  top: 8.7%;
+  /* This top setting is put a gap between nav bar text so that the image won't be blocked by nav bar text */
+  /* top: 8.7%; */
   left: 0;
   min-width: 100%;
   min-height: 100%;
@@ -866,7 +874,7 @@ nav ul li a:hover {
   /* Note: height is 100% in respect to intro height of 100vh */
   height: 100vh;
   /* Darken the background image so that text are more readable */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 .intro4 .text {
   width: 100%;
@@ -1557,8 +1565,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 /* START OF MOBILE MODE */
-/* @media (max-width: 767px) { */
-@media (max-width: 911px) {
+@media (max-width: 767px) {
+/* @media (max-width: 911px) { */
   #navbar ul,
   #navbar .logo {
     display: none;
@@ -2428,7 +2436,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
   .news_all {
     width: 100%;
-    height: 890px;
+
     /* min-height: 530px; */
     /* background: var(--clr_primary); */
     /* background: var(--clr_shade); */
