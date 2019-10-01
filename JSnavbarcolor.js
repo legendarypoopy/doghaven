@@ -1,3 +1,13 @@
+
+
+// if window is > 600, do the following javascript. Anything <600 won't do.
+
+var limit = 600;          
+if(window.innerWidth>limit){
+
+
+
+
   var navbar = document.getElementById("navbar");
   // const navbar = document.querySelector('#navbar')
 
@@ -25,3 +35,10 @@
 
     }
   })
+
+
+
+
+
+}
+//this above close bracket belongs to the var limit
