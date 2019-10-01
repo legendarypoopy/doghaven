@@ -15,7 +15,7 @@
 <body>
   <nav id="navbar">
     <a href="#">
-      <div class="logo">
+      <div id="logo">
       </div>
     </a>
     <ul>
@@ -348,38 +348,24 @@
   </footer>
 
 
-
-
+  
+  <!-- IMPTT: JSnavbarshrink.js won't work if this is activated -->
   <!-- JS: When user scrolls down, hide the navbar. When  user scrolls up, show the navbar -->
   <script type="text/javascript" src="JShidenavbar.js"> </script>
-  
-  
+
   <!-- JS TO CHANGE NAVBAR BACKGROUND COLOR IF SCROLL DOWN  -->
   <script type="text/javascript" src="JSnavbarcolor.js"> </script>
-  
 
   <!-- JS FOR AUTO SLIDER -->
   <script type="text/javascript" src="JSautoslider.js"> </script>
 
-  
-  
+  <!-- IMPTT: JShidenavbar.js won't work if this is activated -->
+  <!-- JS: When user scrolls down, the logo shrinks down. When scroll up to top will become bigger again. -->
+  <!-- <script type="text/javascript" src="JSnavbarshrink.js"> </script> -->
 
 
 
 
-  <!-- <script>
-      var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-        // document.getElementById("navbar").style.backgroundColor = "red";
-      } else {
-        document.getElementById("navbar").style.top = "-100px";
-      }
-      prevScrollpos = currentScrollPos;
-    }  
-  </script> -->
 
 </body>
 </html>

@@ -53,11 +53,10 @@ p {
 
 /* => Nav Bar and Logo img */
 nav {
-  position: relative;
-  z-index: 1;
+  z-index: 99;
   display: flex;
   justify-content: space-between;  
-  align-items: center;
+  /* align-items: center; */
   min-height: var(--font_n);
   font-size: var(--font_n);
   font-weight: bold;
@@ -72,51 +71,54 @@ nav {
   top: 0;
   width: 100%;
   transition: top 0.7s;
+  /* overflow: hidden; */
+  /* padding: 0 6% 0 6%; */
+  /* padding: 90px 10px; */
 }
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  width: 60%;
-  /* adjust the full height of the nav text BOX height */
-  height: 55px;
-  /* adjust the left and right gap of nav bar (moving whole nav bar left/right ). 
-  can't adjust the top and bottom  */
-  margin: 0 5% 0 0;
-
-}
-nav ul li {
-  list-style: none;
-  /* adjust the spacing between each nav boxes also can center the text vertically */
-  padding: 17px 1px 0px 1px;
-  /* backgrd color helps to differential what to adjust on */
-  /* background: yellowgreen; */
-}
-nav ul li a {
-  text-decoration: none;
-  color: var(--clr_accent);
-  /* adjust how big the gap of the text should fit in the box */
-  padding: 16px 18px 16px 18px;
-  /* backgrd color helps to differential what to adjust on */
-  /* background: yellow; */
-  /* text will not jump to next line if no space for it */
-  white-space: nowrap;  
-}
-nav ul li a:hover {
-  color: var(--clr_primary);
-}
-.logo {
+nav #logo {
   width: 125px;
   /* same height as "nav ul" height so as to max full space */
   height: 55px;
   /* backgrd color helps to differential what to adjust on */
   /* background: orange; */
   /* adjust logo left and right. can't adjusthe top and bottom bc already max height  */
-  margin: 0 0 0 68%;
+  margin: 0 0 0 6.3%;
   background-image: url("logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-position: top; */
+  /* JSnavbarshrink: RMB TO TURN THIS TRANSITION ON IF USING THIS JAVASCRIPT  */
+  /* transition: 0.4s; */
 }
+nav ul {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* width: 60%; */
+  /* adjust the full height of the nav text BOX height */
+  /* height: 55px; */
+  /* adjust the left and right gap of nav bar  */
+  margin: 0 5.5% 0 0;
+
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--clr_accent);
+  display: block;
+  /* adjust how big the gap of the text should fit in the box */
+  padding: 17px 20px 17px 20px;
+  /* white-spece: text will not jump to next line if no space for it */
+  white-space: nowrap;
+  /* border-radius: 4px; */
+
+  
+}
+nav ul li a:hover {
+  color: var(--clr_primary);
+  background: rgba(255, 255, 255, 0.8);
+}
+
 .menu_toggle {
   color: var(--clr_dark);
   float: right;
@@ -1565,43 +1567,66 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 /* START OF MOBILE MODE */
-@media (max-width: 767px) {
-/* @media (max-width: 911px) { */
-  #navbar ul,
-  #navbar .logo {
-    display: none;
-  }
-  #navbar {
-    /* background: var(--clr_dark); */
-    /* height: 100vh; */
-  }
-  .menu_toggle {
+/* @media (max-width: 767px) { */
+@media (max-width: 600px) {
+  /* .menu_toggle {
     position: absolute;
     display: block;
-    /* margin: 0; */
     padding: 6px 11px;
     background: var(--clr_light);
     font-size: var(--font_m);
     top: 0;
     right: 0;
+  } */
+  /* margin: 0; */
+
+
+  /* #navbar ul,
+  #navbar .logo {
+    display: none;
+  } */
+  /* #logo {
+    margin: 50px 0;
+  } */
+  #navbar {
+    flex-direction: column;
+    /* background: var(--clr_dark); */
+    /* height: 100vh; */
+    /* display: flex; */
+    }
+  #logo {
+    padding: 3% 3%;
+    /* align-self: left; */
+    /* background: orange; */
   }
   #navbar ul {
-    display: block;
-    font-size: calc(var(--font_m) * 2.2);
+    flex-direction: column;
+    /* display: block; */
+    font-size: calc(var(--font_m) * 1.8);
     width: 100%;
 
     /* text-align: center; */
     /* height: 100px; */
-    margin: -400px 0 0 0;
     /* top: 0; */
   }
-  #navbar ul li {
+  #navbar ul li a {
+    /* width: 100%; */
+    /* align-self: center; */
+    /* text-align: left; */
+    /* color: var(--clr_accent); */
+    padding: 2% 5%;
+    
+  }
+  #navbar ul li a:hover {
+    /* background-image: rgba(0, 0, 0, 0.3); */
+  }
+
+  /* #navbar ul li {
   padding: 10px 10px;
   }
-  #navbar ul li a {
-    color: var(--clr_accent);
-  }
-  
+  */
+
+
 
   /* => Intro1 */
   .intro1 {

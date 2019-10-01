@@ -5,7 +5,7 @@
         document.getElementById("navbar").style.top = "0";
         // document.getElementById("navbar").style.backgroundColor = "red";
       } else {
-        document.getElementById("navbar").style.top = "-55px";
+        document.getElementById("navbar").style.top = "-56px";
       }
       prevScrollpos = currentScrollPos;
     }  
