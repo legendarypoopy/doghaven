@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <div lang="en">
 <head>
   <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     <!-- <a href="#" id="logo"> -->
     <!-- </a> -->
 
-    <ul>
+    <ul id="atommenu">
       <li><a href="#" class="navbarfontcolor">About</a></li>
       <li><a href="#" class="navbarfontcolor">Salon</a></li>
       <li><a href="#" class="navbarfontcolor">Grooming Course</a></li>
@@ -30,7 +30,7 @@
       <li><a href="#" class="navbarfontcolor">Faq</a></li>
       <li><a href="#" class="navbarfontcolor">Contact</a></li>
     </ul>
-    <div class="menu_toggle"><i class="fas fa-bars"></i></div>
+    <a href="javascript:void(0);" class="menu_toggle" onclick="myFunction()"><i class="fas fa-bars"></i></a>
   </nav>
   
   
@@ -356,9 +356,10 @@
 
   <!-- IMPTT: JShidenavbar.js won't work if this is activated -->
   <!-- JS: When user scrolls down, the logo shrinks down. When scroll up to top will become bigger again. -->
-  <!-- <script type="text/javascript" src="JSnavbarshrink.js"> </script> -->
+  <script type="text/javascript" src="JSnavbarshrink.js"> </script>
 
-
+  <!-- JS FOR  -->
+  <script type="text/javascript" src="JStogglemobilemenu.js"> </script>
 
 
 

@@ -1570,39 +1570,38 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 /* @media (max-width: 767px) { */
 @media (max-width: 600px) {
   .menu_toggle {
+    /* float: right; */
     position: absolute;
     display: block;
     padding: 6px 11px;
     background: var(--clr_light);
+    /* background: pink; */
     font-size: var(--font_m);
-    top: 0;
+    /* top: 0; */
     right: 0;
   }
   /* margin: 0; */
 
 
-  /* #navbar ul,
-  #navbar .logo {
-    display: none;
-  } */
-  /* #logo {
-    margin: 50px 0;
-  } */
   #navbar {
-    /* background: var(--clr_dark); */
-    /* height: 100vh; */
-    /* display: flex; */
+    /* height: 0px; */
     flex-direction: column;
     background: var(--clr_light);
+    /* background: orange; */
+    /* display: none; */
+    /* margin: 0px 0 0 0; */
+    /* padding: 0px 0 0 0; */
+    /* top: 0; */
     }
   #logo {
+    /* display: none; */
     /* padding: 10px; */
     /* margin: 150px 0; */
     /* align-self: left; */
-    /* background: orange; */
+    /* background: yellow; */
   }
   #logo:hover {
-    background-image: rgba(0, 0, 0, 0.3);
+    /* background-image: rgba(0, 0, 0, 0.3); */
   }
   #navbar ul {
     flex-direction: column;
@@ -1612,8 +1611,9 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* text-align: center; */
     /* height: 100px; */
     /* top: 0; */
-    margin: 6% 0 0 0;
-    /* background: red; */
+    margin: 10% 0 0 0;
+    background: var(--clr_light);
+    display: none;
   }
   #navbar ul li a {
     /* width: 100%; */
@@ -1627,10 +1627,11 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* background-image: rgba(0, 0, 0, 0.3); */
   }
 
-  /* #navbar ul li {
-  padding: 10px 10px;
+  #navbar ul li {
+  padding: 0;
+  margin 0;
   }
-  */
+ 
 
 
 
