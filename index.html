@@ -13,21 +13,21 @@
 </head>
 
 <body>
-  <!-- <nav id="navbar">
+  <nav id="navbar">
     <a href="#">
       <div class="logo">
       </div>
     </a>
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Salon</a></li>
-      <li><a href="#">Grooming Course</a></li>
-      <li><a href="#">Homestay</a></li>
-      <li><a href="#">Faq</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="navbarfontcolor">About</a></li>
+      <li><a href="#" class="navbarfontcolor">Salon</a></li>
+      <li><a href="#" class="navbarfontcolor">Grooming Course</a></li>
+      <li><a href="#" class="navbarfontcolor">Homestay</a></li>
+      <li><a href="#" class="navbarfontcolor">Faq</a></li>
+      <li><a href="#" class="navbarfontcolor">Contact</a></li>
     </ul>
     <div class="menu_toggle"><i class="fas fa-bars"></i></div>
-  </nav> -->
+  </nav>
   
   
 
@@ -348,67 +348,38 @@
   </footer>
 
 
-  <!-- CAN DELETE THIS AFTER TESTING
-  <div class="atomtest"></div>   -->
 
 
-  <!-- script for auto slider -->
-  <script>
-    var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+  <!-- JS: When user scrolls down, hide the navbar. When  user scrolls up, show the navbar -->
+  <script type="text/javascript" src="JShidenavbar.js"> </script>
+  
+  
+  <!-- JS TO CHANGE NAVBAR BACKGROUND COLOR IF SCROLL DOWN  -->
+  <script type="text/javascript" src="JSnavbarcolor.js"> </script>
+  
+
+  <!-- JS FOR AUTO SLIDER -->
+  <script type="text/javascript" src="JSautoslider.js"> </script>
+
+  
+  
+
+
+
+
+  <!-- <script>
+      var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+        // document.getElementById("navbar").style.backgroundColor = "red";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-    </script>
-
-
-
-
-  <!-- /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */ -->
-  <script type="text/javascript">
-
-// CAN'T GET THIS TO WORK
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset = "0") {
-//   // navbar.classList.add("sticky");
-//   document.getElementById("navbar").style.backgroundColor = "red";
-//   } else {
-//   // navbar.classList.remove("sticky");
-//   document.getElementById("navbar").style.backgroundColor = "yellow";
-//   }
-// }
-
-
-
-  // REAL JAVASCRIPT BELOW:
-    // var prevScrollpos = window.pageYOffset;
-    // window.onscroll = function() {
-    //   var currentScrollPos = window.pageYOffset;
-    //   if (prevScrollpos > currentScrollPos) {
-    //     document.getElementById("navbar").style.top = "0";
-    //     // document.getElementById("navbar").style.backgroundColor = "red";
-    //   } else {
-    //     document.getElementById("navbar").style.top = "-100px";
-    //   }
-    //   prevScrollpos = currentScrollPos;
-    // }  
-  </script>  
-
-
-
-
+      prevScrollpos = currentScrollPos;
+    }  
+  </script> -->
 
 </body>
 </html>
