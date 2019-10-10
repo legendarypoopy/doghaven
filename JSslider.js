@@ -34,6 +34,7 @@ var image = [aa, bb, cc, dd];
 // cc.style.display = 'none';
 // dd.style.display = 'none';
 
+// This x is just to make all the .intro1-4 to display as none and then .intro1 to display as block only
 var x;
 var slides = document.getElementsByClassName("mySlides");
   for (x = 0; x < slides.length; x++) {
@@ -43,14 +44,15 @@ var slides = document.getElementsByClassName("mySlides");
 
 // image[0].style.display = 'none';
 
-let i = 0;
+setInterval(nextImage , 4800);
+var i = 0;
+
 
 nextBtn.addEventListener('click', nextImage);
 prevBtn.addEventListener('click', prevImage);
 
 function nextImage(){
-  nextBtn.style.color = 'red';
-
+  // nextBtn.style.color = 'blue';
 
   if(i === 3) {
     i= 0;
@@ -70,8 +72,12 @@ function nextImage(){
       }
     image[i].style.display = 'block';
 
+    
 }
 
+
+
+// setInterval(nextImage , 1000);
 
 
 
