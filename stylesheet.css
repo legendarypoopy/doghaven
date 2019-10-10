@@ -129,9 +129,35 @@ nav ul li a:hover {
 
 
 
+.slideshow-container {
+  position: relative;
+}
 
-
-
+.sliderbtn {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--clr_light);
+  padding: calc(var(--font_n)/2) var(--font_n);
+  font-size: var(--font_n);
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  width: 6%;
+}
+.nextbtn {
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+.prevbtn {
+  position: absolute;
+  top: 77.5%;
+  right: 0;
+}
+.sliderbtn:hover {
+  background: var(--clr_light);
+  color: var(--clr_primary);
+}
 
 
 /* => Intro 0000000 */
@@ -258,6 +284,7 @@ nav ul li a:hover {
   /* background-position: bottom; */
   /* Adjust image left/right/top/bottom */
   /* background-position: 400px 100px; */
+  /* display: none; */
 }
 /* overlay not required for this div bc want  image (hero1) to remain white  */
 /* .overlay1 { */
@@ -1461,6 +1488,9 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 .footer h1 a:hover {
   color: var(--clr_primary);
 }
+.arrow {
+  display: none;
+}
 .footer .info p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 1.5% 0% 0 6%;
@@ -1632,8 +1662,21 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   margin 0;
   }
  
+  .sliderbtn {
+    width: 22%;
+    
 
-
+  }
+  .nextbtn {
+    position: absolute;
+    top: 85%;
+    right: 0;
+  }
+  .prevbtn {
+    position: absolute;
+    top: 92%;
+    right: 0;
+  }
 
   /* => Intro1 */
   .intro1 {
