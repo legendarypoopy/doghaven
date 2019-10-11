@@ -50,7 +50,7 @@ p {
   font-size: var(--font_n);
 }
 
-/* => Nav Bar and Logo img */
+/* DESKTOP: Nav Bar and Logo img */
 nav {
   z-index: 99;
   display: flex;
@@ -1291,48 +1291,61 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* margin: 0; */
 
 
-  #navbar {
+  /* MOBILE SECTION: NAVBAR */
+  nav {
     /* height: 0px; */
     flex-direction: column;
-    background: var(--clr_light);
     /* background: orange; */
     /* display: none; */
     /* margin: 0px 0 0 0; */
     /* padding: 0px 0 0 0; */
     /* top: 0; */
+    font-weight: 500;
+    /* height: 100vh; */
     }
-  #logo {
+  nav #logo {
     display: none;
     /* padding: 10px; */
     /* margin: 150px 0; */
     /* align-self: left; */
     /* background: yellow; */
+    /* position: absolute; */
   }
-  #navbar ul {
+  nav ul {
     flex-direction: column;
-    /* display: block; */
-    font-size: calc(var(--font_m) * 1.8);
+    font-size: calc(var(--font_m) * 1.5);
     width: 100%;
     /* text-align: center; */
     /* height: 100px; */
     /* top: 0; */
-    margin: 10% 0 0 0;
-    background: var(--clr_light);
+    /* margin: 10% 0 0 0; */
+    /* background: var(--clr_light); */
     display: none;
+    /* height: 100vh; */
+    /* align-content: center; */
+    /* align-items: center; */
+ 
   }
-  #navbar ul li a {
+  nav ul li {
+    background: var(--clr_shade);
+    }
+  nav ul li a {
     /* width: 100%; */
     /* align-self: center; */
     /* text-align: left; */
-    /* color: var(--clr_accent); */
+    color: var(--clr_accent);
     padding: 3% 6%;
-    
+  }
+  /* This is to give extra white space at the top when toggle menu */
+  nav ul li:first-child {
+    padding: 20% 0 0 0;
+  }
+  /* This is to give extra white space at the bottom to cover entire screen when toggle menu */
+  nav ul li:last-child {
+    padding: 0 0 100% 0;
   }
 
-  #navbar ul li {
-  padding: 0;
-  margin: 0;
-  }
+ 
 
   /* MOBILE SECTION: Slider buttons */
   .sliderbtn {
