@@ -22,12 +22,11 @@
   --font_m: 1.3rem;
   --font_l: 2.4rem;
 
-  --
 }
 
 /* => Standardized All Typograghy and Font size*/
 html{
-  box-sizing: ;
+  /* box-sizing: ; */
   font-family: var(--ff_serif);
   color: var(--clr_accent);
   font-size: var(--font_n);
@@ -157,100 +156,6 @@ nav ul li a:hover {
 .sliderbtn:hover {
   background: var(--clr_light);
   color: var(--clr_primary);
-}
-
-
-/* => Intro 0000000 */
-.intro {
-  width: 100%;
-  height: 100vh;
-
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
-  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
-  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
-  /* padding: 10% 5% 10% 5%; */
-
-  /* In case need to adjust the WHOLE intro down when not enough space */
-  /* margin: 0px 0 0 0; */
-
-  /* Just want to see the full height on phone, to toggle off when done */
-  /* background: #eeeeee; */
-
-  /* Image position and size adjustment */
-  background-image: url("labrador.jpg");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-size: 60%;
-  /* Adjust image left/right */
-  background-position-x: 90%;
-  /* Adjust image left/right/top/bottom */
-  /* background-position: 400px 100px; */
-
-  /* background-size: cover; */
-}
-.intro .text {
-  width: 50%;
-  /* height: 600px; */
-  float: left;
-}
-.intro .text h1 {
-  padding: 20% 5% 0 12%;
-}
-.intro .text h2 {
-  padding: 0.5% 5% 0% 12%;
-}
-.intro .text h3 {
-  padding: 8% 5% 0 12%;
-}
-.intro .text p {
-  padding: 0.5% 17% 0 12%;
-}
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-.intro .mini_nav {
-  /* float: right; */
-  /* width: 10%; */
-  /* height: 100vh; */
- 
-  /* align-items: center; */
-}
-.intro .mini_nav ul {
-  /* Float right bc float left is the text */
-  float: right;
-  /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-  display: flex;
-  /* Flex is set to row by default, so need to set as column or else it won't work */
-  flex-direction: column;
-  /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-  height: 100vh;
-
-  /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-  Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-  To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-  justify-content: center;
-
-  /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-  Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-  the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-  go adjust "justify-content: center" and "line-height: 90px" respectively. */
-  padding: 0 3%;
-}
-.intro .mini_nav ul li {
-  /* Remove the bullets */
-  list-style: none;
-  /* To align the text in the middle */
-  text-align: center;
-
-  /* Just for me to check the vertical box of this .mini_nav    */
-  /* background: yellow; */
-}
-.intro .mini_nav ul li a {
-  /* Remove the underline */
-  text-decoration: none;
-  /* color: yellow; */
-  /* To control the height spacing in between the nav symbols  */
-  line-height: 80px;
-  font-size: 1.4rem;
-  color: var(--clr_accent);
 }
 
 
@@ -384,62 +289,13 @@ nav ul li a:hover {
   transition: .3s;
 }
 .btn1:hover {
-  color: var(--clr_dark);
+  color: var(--clr_light);
   border: 1px solid var(--clr_primary);
   z-index: 1;
 }
 .btn1:hover:before {
   top: 0;
 }
-
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-.intro1 .mini_nav {
-  /* float: right; */
-  /* width: 10%; */
-  /* height: 100vh; */
- 
-  /* align-items: center; */
-}
-.intro1 .mini_nav ul {
-  /* Float right bc float left is the text */
-  float: right;
-  /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-  display: flex;
-  /* Flex is set to row by default, so need to set as column or else it won't work */
-  flex-direction: column;
-  /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-  height: 100vh;
-
-  /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-  Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-  To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-  justify-content: center;
-
-  /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-  Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-  the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-  go adjust "justify-content: center" and "line-height: 90px" respectively. */
-  padding: 0 3%;
-}
-.intro1 .mini_nav ul li {
-  /* Remove the bullets */
-  list-style: none;
-  /* To align the text in the middle */
-  text-align: center;
-
-  /* Just for me to check the vertical box of this .mini_nav    */
-  /* background: yellow; */
-}
-.intro1 .mini_nav ul li a {
-  /* Remove the underline */
-  text-decoration: none;
-  /* color: yellow; */
-  /* To control the height spacing in between the nav symbols  */
-  line-height: 80px;
-  font-size: 1.4rem;
-  color: var(--clr_accent);
-}
-
 
 
 
@@ -449,7 +305,7 @@ nav ul li a:hover {
   height: 100vh;
   position: relative;
 
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top,bottom,left,right gap (in this div)! 
   Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
   All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
   /* padding: 10% 5% 10% 5%; */
@@ -594,56 +450,6 @@ nav ul li a:hover {
 .btn2:hover:before {
   top: 0;
 }
-
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-.intro2 .mini_nav {
-  /* float: right; */
-  /* width: 10%; */
-  /* height: 100vh; */
- 
-  /* align-items: center; */
-}
-.intro2 .mini_nav ul {
-  /* Float right bc float left is the text */
-  float: right;
-  /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-  display: flex;
-  /* Flex is set to row by default, so need to set as column or else it won't work */
-  flex-direction: column;
-  /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-  height: 100vh;
-
-  /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-  Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-  To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-  justify-content: center;
-
-  /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-  Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-  the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-  go adjust "justify-content: center" and "line-height: 90px" respectively. */
-  padding: 0 3%;
-}
-.intro2 .mini_nav ul li {
-  /* Remove the bullets */
-  list-style: none;
-  /* To align the text in the middle */
-  text-align: center;
-
-  /* Just for me to check the vertical box of this .mini_nav    */
-  /* background: yellow; */
-}
-.intro2 .mini_nav ul li a {
-  /* Remove the underline */
-  text-decoration: none;
-  /* color: yellow; */
-  /* To control the height spacing in between the nav symbols  */
-  line-height: 80px;
-  font-size: 1.4rem;
-  color: var(--clr_accent);
-}
-
-
 
 
 
@@ -799,53 +605,6 @@ nav ul li a:hover {
   top: 0;
 }
 
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-.intro3 .mini_nav {
-  /* float: right; */
-  /* width: 10%; */
-  /* height: 100vh; */
- 
-  /* align-items: center; */
-}
-.intro3 .mini_nav ul {
-  /* Float right bc float left is the text */
-  float: right;
-  /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-  display: flex;
-  /* Flex is set to row by default, so need to set as column or else it won't work */
-  flex-direction: column;
-  /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-  height: 100vh;
-
-  /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-  Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-  To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-  justify-content: center;
-
-  /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-  Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-  the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-  go adjust "justify-content: center" and "line-height: 90px" respectively. */
-  padding: 0 3%;
-}
-.intro3 .mini_nav ul li {
-  /* Remove the bullets */
-  list-style: none;
-  /* To align the text in the middle */
-  text-align: center;
-
-  /* Just for me to check the vertical box of this .mini_nav    */
-  /* background: yellow; */
-}
-.intro3 .mini_nav ul li a {
-  /* Remove the underline */
-  text-decoration: none;
-  /* color: yellow; */
-  /* To control the height spacing in between the nav symbols  */
-  line-height: 80px;
-  font-size: 1.4rem;
-  color: var(--clr_accent);
-}
 
 
 /* => Intro 4 */
@@ -1015,58 +774,6 @@ nav ul li a:hover {
 .btn4:hover:before {
   top: 0;
 }
-
-/* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-.intro4 .mini_nav {
-  /* float: right; */
-  /* width: 10%; */
-  /* height: 100vh; */
- 
-  /* align-items: center; */
-}
-.intro4 .mini_nav ul {
-  /* Float right bc float left is the text */
-  float: right;
-  /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-  display: flex;
-  /* Flex is set to row by default, so need to set as column or else it won't work */
-  flex-direction: column;
-  /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-  height: 100vh;
-
-  /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-  Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-  To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-  justify-content: center;
-
-  /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-  Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-  the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-  go adjust "justify-content: center" and "line-height: 90px" respectively. */
-  padding: 0 3%;
-}
-.intro4 .mini_nav ul li {
-  /* Remove the bullets */
-  list-style: none;
-  /* To align the text in the middle */
-  text-align: center;
-
-  /* Just for me to check the vertical box of this .mini_nav    */
-  /* background: yellow; */
-}
-.intro4 .mini_nav ul li a {
-  /* Remove the underline */
-  text-decoration: none;
-  /* color: yellow; */
-  /* To control the height spacing in between the nav symbols  */
-  line-height: 80px;
-  font-size: 1.4rem;
-  color: var(--clr_accent);
-}
-
-
-
-
 
 
 
@@ -1596,7 +1303,10 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-/* START OF MOBILE MODE */
+/* ==========================
+   START OF MOBILE MODE 
+   ========================== */
+
 /* @media (max-width: 767px) { */
 @media (max-width: 600px) {
   .menu_toggle {
@@ -1624,14 +1334,11 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* top: 0; */
     }
   #logo {
-    /* display: none; */
+    display: none;
     /* padding: 10px; */
     /* margin: 150px 0; */
     /* align-self: left; */
     /* background: yellow; */
-  }
-  #logo:hover {
-    /* background-image: rgba(0, 0, 0, 0.3); */
   }
   #navbar ul {
     flex-direction: column;
@@ -1653,13 +1360,10 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     padding: 3% 6%;
     
   }
-  #navbar ul li a:hover {
-    /* background-image: rgba(0, 0, 0, 0.3); */
-  }
 
   #navbar ul li {
   padding: 0;
-  margin 0;
+  margin: 0;
   }
  
   .sliderbtn {
@@ -1768,53 +1472,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     position: relative;
     /* align text to center of the page */
     text-align: center;
-  }
-  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-  .intro1 .mini_nav {
-    /* float: right; */
-    /* width: 10%; */
-    /* height: 100vh; */
-  
-    /* align-items: center; */
-  }
-  .intro1 .mini_nav ul {
-    /* Float right bc float left is the text */
-    float: right;
-    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-    display: flex;
-    /* Flex is set to row by default, so need to set as column or else it won't work */
-    flex-direction: column;
-    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-    height: 100vh;
-
-    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-    justify-content: center;
-
-    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-    go adjust "justify-content: center" and "line-height: 90px" respectively. */
-    padding: 0 3%;
-  }
-  .intro1 .mini_nav ul li {
-    /* Remove the bullets */
-    list-style: none;
-    /* To align the text in the middle */
-    text-align: center;
-
-    /* Just for me to check the vertical box of this .mini_nav    */
-    /* background: yellow; */
-  }
-  .intro1 .mini_nav ul li a {
-    /* Remove the underline */
-    text-decoration: none;
-    /* color: yellow; */
-    /* To control the height spacing in between the nav symbols  */
-    line-height: 80px;
-    font-size: 1.4rem;
-    color: var(--clr_accent);
   }
   /* Button 1 style: Grey text and perimeter */
   .btn1 {
@@ -1975,53 +1632,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
-  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-  .intro2 .mini_nav {
-    /* float: right; */
-    /* width: 10%; */
-    /* height: 100vh; */
-  
-    /* align-items: center; */
-  }
-  .intro2 .mini_nav ul {
-    /* Float right bc float left is the text */
-    float: right;
-    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-    display: flex;
-    /* Flex is set to row by default, so need to set as column or else it won't work */
-    flex-direction: column;
-    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-    height: 100vh;
-
-    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-    justify-content: center;
-
-    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-    go adjust "justify-content: center" and "line-height: 90px" respectively. */
-    padding: 0 3%;
-  }
-  .intro2 .mini_nav ul li {
-    /* Remove the bullets */
-    list-style: none;
-    /* To align the text in the middle */
-    text-align: center;
-
-    /* Just for me to check the vertical box of this .mini_nav    */
-    /* background: yellow; */
-  }
-  .intro2 .mini_nav ul li a {
-    /* Remove the underline */
-    text-decoration: none;
-    /* color: yellow; */
-    /* To control the height spacing in between the nav symbols  */
-    line-height: 80px;
-    font-size: 1.4rem;
-    color: var(--clr_accent);
-  }
   /* Button 2 style: White text and perimeter */
   .btn2 {
     font-size: var(--font_n);
@@ -2176,53 +1786,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
-  }
-  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-  .intro3 .mini_nav {
-    /* float: right; */
-    /* width: 10%; */
-    /* height: 100vh; */
-  
-    /* align-items: center; */
-  }
-  .intro3 .mini_nav ul {
-    /* Float right bc float left is the text */
-    float: right;
-    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-    display: flex;
-    /* Flex is set to row by default, so need to set as column or else it won't work */
-    flex-direction: column;
-    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-    height: 100vh;
-
-    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-    justify-content: center;
-
-    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-    go adjust "justify-content: center" and "line-height: 90px" respectively. */
-    padding: 0 3%;
-  }
-  .intro3 .mini_nav ul li {
-    /* Remove the bullets */
-    list-style: none;
-    /* To align the text in the middle */
-    text-align: center;
-
-    /* Just for me to check the vertical box of this .mini_nav    */
-    /* background: yellow; */
-  }
-  .intro3 .mini_nav ul li a {
-    /* Remove the underline */
-    text-decoration: none;
-    /* color: yellow; */
-    /* To control the height spacing in between the nav symbols  */
-    line-height: 80px;
-    font-size: 1.4rem;
-    color: var(--clr_accent);
   }
   /* Button 3 style: White text and perimeter */
   .btn3 {
@@ -2393,53 +1956,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     position: relative;
     max-height: 200px;
     overflow: hidden;
-  }
-  /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn -> Gap adjustment for button  */
-  .intro4 .mini_nav {
-    /* float: right; */
-    /* width: 10%; */
-    /* height: 100vh; */
-  
-    /* align-items: center; */
-  }
-  .intro4 .mini_nav ul {
-    /* Float right bc float left is the text */
-    float: right;
-    /* Flex can only be done in .mini_nav ul (NOT .mini_nav) */
-    display: flex;
-    /* Flex is set to row by default, so need to set as column or else it won't work */
-    flex-direction: column;
-    /* Must specific a height (any length) or else it won't know what's the full length to justify-content (space between, space around, center, flex start etc) */
-    height: 100vh;
-
-    /* This is to control the TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column (need set height length eg. 100vh).
-    Don't use space around/space between bc it will space out each mini_nav_symbol equally apart v v far - not nice looking. 
-    To control the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols", go .mini_nav ul li a and then change line-height. */
-    justify-content: center;
-
-    /* => This is to adjust the entire mini_nav_symbol left/right of the screen only <= 
-    Note: To control TOP and BOTTOM spacing only of the "1st and last mini_nav_symbols" in vertical column + 
-    the TOP and BOTTOM spacing inside the "1st and last nav mini_bav_symbols",
-    go adjust "justify-content: center" and "line-height: 90px" respectively. */
-    padding: 0 3%;
-  }
-  .intro4 .mini_nav ul li {
-    /* Remove the bullets */
-    list-style: none;
-    /* To align the text in the middle */
-    text-align: center;
-
-    /* Just for me to check the vertical box of this .mini_nav    */
-    /* background: yellow; */
-  }
-  .intro4 .mini_nav ul li a {
-    /* Remove the underline */
-    text-decoration: none;
-    /* color: yellow; */
-    /* To control the height spacing in between the nav symbols  */
-    line-height: 80px;
-    font-size: 1.4rem;
-    color: var(--clr_accent);
   }
   /* Button 4 style: White text and perimeter */
   .btn4 {

@@ -1,35 +1,20 @@
-// Auto Slide every x seconds
 
-// var slideIndex = 0;
-//   showSlides();
-    
-//   function showSlides() {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}
-//     slides[slideIndex-1].style.display = "block";
-//     setTimeout(showSlides, 4500);
-  
-
-
-//   }
-
-// Next and Previous Buttons
+// To grab Next and Previous buttons
 const nextBtn = document.querySelector('.nextbtn');
 const prevBtn = document.querySelector('.prevbtn');
 // const container = document.querySelector('.slideshow-container');
 
+// To grab the .intro1-4 divs
 const aa = document.querySelector('.intro1');
 const bb = document.querySelector('.intro2');
 const cc = document.querySelector('.intro3');
 const dd = document.querySelector('.intro4');
-const slider_content = document.querySelector('.slideshow-container');
+// const slider_content = document.querySelector('.slideshow-container');
 var image = [aa, bb, cc, dd];
 
+// Below are ways to make the display as none, using either array method or direct aa method
+// image[0].style.display = 'none';
+// aa.style.display = 'none';
 // bb.style.display = 'none';
 // cc.style.display = 'none';
 // dd.style.display = 'none';
@@ -42,46 +27,58 @@ var slides = document.getElementsByClassName("mySlides");
   }
   aa.style.display = 'block';
 
-// image[0].style.display = 'none';
+// Auto slide every ____ milliseconds
+setInterval(nextSlide , 4800);
 
-setInterval(nextImage , 4800);
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
 var i = 0;
 
+// NEXT BUTTON
+function nextSlide(){
+  // This is the same as y (below) to make all the .intro1-4 to display as none but i use y var loop to make the code dynamic so that future new div in arrays will automatically be looped as well 
+  // aa.style.display = 'none';
+  // bb.style.display = 'none';
+  // cc.style.display = 'none';
+  // dd.style.display = 'none';
 
-nextBtn.addEventListener('click', nextImage);
-prevBtn.addEventListener('click', prevImage);
+  // This y is just to make all the .intro1-4 to display as none and then .intro1 to display as block only
+  var y;
+  var slides = document.getElementsByClassName("mySlides");
+    for (y = 0; y < slides.length; y++) {
+    slides[y].style.display = "none";
+    }
 
-function nextImage(){
-  // nextBtn.style.color = 'blue';
-
-  if(i === 3) {
+  if(i === image.length-1) {
     i= 0;
   }else{
     i = i+1;
   }
-    
-    // aa.style.display = 'none';
-    // bb.style.display = 'none';
-    // cc.style.display = 'none';
-    // dd.style.display = 'none';
 
-    var y;
-    var slides = document.getElementsByClassName("mySlides");
-      for (y = 0; y < slides.length; y++) {
-      slides[y].style.display = "none";
-      }
-    image[i].style.display = 'block';
-
-    
+  image[i].style.display = 'block';   
 }
 
+// PREVIOUS BUTTON
+function prevSlide(){
+  // nextBtn.style.color = 'blue';
+  // aa.style.display = 'none';
+  // bb.style.display = 'none';
+  // cc.style.display = 'none';
+  // dd.style.display = 'none';
 
+  // This y is just to make all the .intro1-4 to display as none and then .intro1 to display as block only
+  var y;
+  var slides = document.getElementsByClassName("mySlides");
+    for (y = 0; y < slides.length; y++) {
+    slides[y].style.display = "none";
+    }
 
-// setInterval(nextImage , 1000);
+  if(i === image.length-image.length) {
+    i= image.length-1;
+  }else{
+    i = i-1;
+  }
 
-
-
-
-
-
-
+  image[i].style.display = 'block';   
+}
