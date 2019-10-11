@@ -1,3 +1,7 @@
+// if window is > 600, do the following javascript. Anything <600 won't do.
+
+var limit = 600;          
+if(window.innerWidth>limit){
 
 
 
@@ -33,4 +37,6 @@
 
 
 
+}
+//this above close bracket belongs to the var limit
 
