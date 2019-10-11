@@ -12,7 +12,7 @@ toggle.addEventListener('click', doThis);
 
 function doThis(){
 
-  button.style.color = 'blue';
+  // button.style.color = 'blue';
   // dogLogo.style.backgroundColor = 'pink';
 
   if (dogLogo.style.display === "block") {
