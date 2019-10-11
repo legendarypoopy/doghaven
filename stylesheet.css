@@ -6,7 +6,8 @@
 
 :root {
   --clr_primary: #8BCD2D;
-  --clr_accent: #4c4c4c;
+  /* --clr_accent: #4c4c4c; */
+  --clr_accent: #373D3F;
   --clr_dark: black;
   --clr_light: white;
   --clr_shade: #F3F3F3;
