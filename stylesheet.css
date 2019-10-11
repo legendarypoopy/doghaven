@@ -1365,11 +1365,10 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   padding: 0;
   margin: 0;
   }
- 
+
+  /* MOBILE SECTION: Slider buttons */
   .sliderbtn {
     width: 22%;
-    
-
   }
   .nextbtn {
     position: absolute;
@@ -1382,7 +1381,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     right: 0;
   }
 
-  /* => Intro1 */
+
+  /* MOBILE SECTION: Intro1 */
   .intro1 {
     width: 100%;
     height: 700px;
@@ -1531,7 +1531,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-  /* => Intro 2 */
+  /* MOBILE SECTION: Intro 2 */
   .intro2 {
     width: 100%;
     height: 700px;
@@ -1689,7 +1689,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-  /* => Intro 3 */
+  /* MOBILE SECTION: Intro 3 */
   .intro3 {
     width: 100%;
     height: 700px;
@@ -1842,7 +1842,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
 
 
-  /* => Intro 4 */
+  /* MOBILE SECTION: Intro 4 */
   .intro4 {
     width: 100%;
     height: 700px;
@@ -2011,7 +2011,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
 
 
-  /* News section */
+  /* MOBILE SECTION: News Title only */
   .news_title {
     /* background: var(--clr_primary); */
     background: #F3F3F3;
@@ -2025,10 +2025,11 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     color: var(--clr_accent);
   }  
 
+  /* MOBILE SECTION: News containers */
   .news_all {
     width: 100%;
 
-    /* min-height: 530px; */
+    min-height: 830px;
     /* background: var(--clr_primary); */
     /* background: var(--clr_shade); */
     /* background: red; */
@@ -2187,12 +2188,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-
-
-
-
-
-  /* What do we do section */
+  /* MOBILE SECTION: WHAT DO WE DO? */
   .objective {
     /* Just want to see the full height on phone, to toggle off when done */
     /* margin: 100px 0 0 0; */
@@ -2251,7 +2247,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-  /* What's our secret section */
+  /* MOBILE SECTION: WHAT'S OUR SECRET? */
   .secret {
     /* Just want to see the full height on phone, to toggle off when done */
     /* margin: 100px 0 0 0; */
@@ -2299,7 +2295,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
 
 
-  /* => Footer section  */
+  /* MOBILE SECTION: Footer  */
   .footer {
     width: 100%;
     height: auto;

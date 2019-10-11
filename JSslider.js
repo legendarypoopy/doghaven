@@ -2,7 +2,6 @@
 // To grab Next and Previous buttons
 const nextBtn = document.querySelector('.nextbtn');
 const prevBtn = document.querySelector('.prevbtn');
-// const container = document.querySelector('.slideshow-container');
 
 // To grab the .intro1-4 divs
 const aa = document.querySelector('.intro1');
