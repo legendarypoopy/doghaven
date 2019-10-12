@@ -1059,7 +1059,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   background: var(--clr_light);
 
     /* Image position and size adjustment */
-    background-image: url("GR1.jpg");
+    background-image: url("goldenr.jpg");
     background-repeat: no-repeat;
     background-size: 32%;
     /* Adjust image left/right */
@@ -1069,6 +1069,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
     /* background-position: 400px 100px; */ 
     /* background-size: cover; */
+    
 }
 .objective .objective_text {
   width: 100%;
@@ -2192,6 +2193,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
       /* background-position-x: 85%; */
       /* Adjust image left/right/top/bottom */
       /* background-position-y: bottom; */
+      /* background-position-y: right; */
 
       /* background-position: 400px 100px; */ 
       /* background-size: cover; */
@@ -2218,7 +2220,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   .divider1_image_on_mobile {
       /* Image position and size adjustment */
       height: 300px;
-      background-image: url("GR1.jpg");
+      background-image: url("goldenr.jpg");
       background-repeat: no-repeat;
       background-size: contain;
       /* Adjust image left/right */
