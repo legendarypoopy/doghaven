@@ -373,7 +373,7 @@ p {
     top: 16%;
   } */
   .intro2 .text h1 {
-    padding: 95% 6% 0 6%;
+    padding: 90% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
     /* text-align: center; */
@@ -551,7 +551,7 @@ p {
     text-decoration: none;
   }
   .intro3 .text h2 {
-    padding: 0.5% 45% 0% 6%;
+    padding: 0.5% 40% 0% 6%;
     color: var(--clr_light);
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
@@ -693,9 +693,9 @@ p {
     background-size: cover;
     position: relative;
     /* top: 150px; */
-    /* left: 6%;
-    top: 30%; */
-    margin: 40% 0% 1% -53.1%;
+    left: 60%;
+    /* top: 30%; */
+    margin: 35% 0% 1% -53.1%;
   }
   .intro4 .text h1 {
     padding: 0% 6% 0 6%;
@@ -1171,6 +1171,9 @@ p {
   }
   .footer .info h1 a:hover {
     color: var(--clr_primary);
+  }
+  .arrow {
+    display: none;
   }
   .footer .info p {
     /* Adjust only top and bottom. Left and right control in .recognition div */
