@@ -373,7 +373,7 @@ p {
     top: 16%;
   } */
   .intro2 .text h1 {
-    padding: 90% 6% 0 6%;
+    padding: 70% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
     /* text-align: center; */
@@ -530,7 +530,7 @@ p {
     top: 16%;
   } */
   .intro3 .text h1 {
-    padding: 90% 6% 0 6%;
+    padding: 70% 6% 0 6%;
     /* Position relative will make the text visible as there is an overlay above it */
     position: relative;
   }
