@@ -149,7 +149,7 @@ p {
     border: none;
     z-index: 10;
     cursor: pointer;
-    width: 22%;
+    width: 13%;
   }
   .nextbtn {
     position: absolute;
@@ -160,6 +160,9 @@ p {
     position: absolute;
     top: 92%;
     right: 0;
+  }
+  .btntext {
+    display: none;
   }
 
 
@@ -808,37 +811,25 @@ p {
 
   /* MOBILE SECTION: News containers */
   .news_all {
-    width: 100%;
-
-    min-height: 870px;
-    /* background: var(--clr_primary); */
     background: var(--clr_shade);
-    /* background: red; */
-    /* z-index: -2; */
-    /* justify-content: center; */
-    /* justify-items: center; */
-    /* justify-self: center; */
-  
-    /* this will bring the box below if width gets smaller in mobile 
-    but without this is fine as will do a media query for mobile*/
-    /* flex-wrap: wrap; */
-    /* display: flex; */
-    /* margin: 0 6% 0% 6%; */
-    /* margin: 7%; */
-    /* left: 6%; */
+    display: grid;
+    /* Can change 1 to auto-fit and it will be responsive
+    18rem is the biggest it can go before the screen can't fit for small mobile devices */
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+    grid-gap: var(--font_s);
+    padding: 0 6%;
+    /* cursor: pointer; */
   }
+  
   .news1 {
-    display: block;
-    /* position: relative; */
-    /* float: left; */
-    /* 50% each for news1 and news2 */
-    width: 88%;
-    height: 333px;
-    padding: 0px 0px 0px 0%;
-    margin: 0% 6% 0 6%;
-    background: var(--clr_primary);
-    /* note sure if is correct, can delete if wrg: this left&right margin will make the box align properly when in mobile  */
-    /* background: rgba(0, 0, 0, 0.5); */
+    background: var(--clr_light);
+    
+    transition: transform 1s;
+    
+    &: hover {
+      transform: translateY(-10px);
+    }
+    
   }
   .news1_link:link {
     color: var(--clr_accent);
@@ -861,56 +852,37 @@ p {
     text-decoration: none;
   }
   .container_image1 {
-    min-height: 80%;
-    /* background: green; */
-    position: relative;
-    overflow: hidden;
-    /* rgba doesn't work unless background color is removed :(  */
-    /* background: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    min-height: 22rem;
+    background: url("okto0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* overflow: hidden; */
   }
-  .video_okto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    /* height: 100%; */
+  /* .video_okto { */
+    /* width: 100%; */
+    /* min-height: 15rem; */
+    /* filter to enahnce the video color */
+    /* -webkit-filter: contrast(150%);filter: contrast(130%); */
     /* if you want to center the video no matter how you resize, change the top and left to 50%, and transform: translate(-50%, -50%)  
     else, set top and left as 0, remove the transform*/
-    transform: translate(-50%, -50%);
-    /* filter to enahnce the video color */
-    -webkit-filter: contrast(150%);filter: contrast(130%);
-  }
-  /* .video_okto:hover {
-    height: 125%;
-    -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green);
-  } */
+    /* transform: translate(-50%, -50%); */
+  /* }  */
   .container_text1 {
-    /* display: block; */
-    position: relative;
-    width: 100%;
-    min-height: 20%;
-    background: var(--clr_light);
-    /* margin: 0 0px 0 0; */
+    min-height: 2rem;
   }
-  .container_text1 h3 {
+  .news1 h3 {
     padding: 17px 0 0 17px;
   }
-  .container_text1 p {
+  .news1 p {
     padding: 3px 17px 15px 17px;
   }
-  
+
+
+
   .news2 {
-    display: block;
-    /* position: relative; */
-    /* float: left; */
-    /* 50% each for news1 and news2 */  
-    width: 88%;
-    height: 333px;
-    padding: 0px 0px 0px 0px;
-    margin: 20% 6% 0 6%;
-    background: yellowgreen;
-    /* note sure if is correct, can delete if wrg: this left&right margin will make the box align properly when in mobile  */
-    /* background: purple; */
+    background: var(--clr_light);
   }
   .news2_link:link {
     color: var(--clr_accent);
@@ -933,30 +905,21 @@ p {
     text-decoration: none;
   }
   .container_image2 {
-    background: none;
-    min-height: 80%;
-    background: #0C2B57;
+    width: 100%;
+    /* height: 100%; */
+    min-height: 22rem;
+    /* height: 85%; */
+    /* background: url("straits-times-test.jpg"); */
     background: url("straits-times.jpg");
-    background-size: cover;  
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    overflow: hidden;
-    /* background-position-y: bottom; */
-    /* Adjust image left/right */
-    /* background-position-x: 90%; */
-    /* Adjust image left/right/top/bottom */
-  
-    /* this margin should be useful in mobile to separte okto and straits times vertical top and bottom spacing */
-    /* not req'd for desktop */
-    /* margin: 10px 0 0 0px; */
+    /* overflow: hidden; */
+    /* position: relative; */
   }
   .container_text2 {
-    /* position: relative; */
-    width: 100%;
-    min-height: 20%;
-    background: var(--clr_light);
-    /* margin: 0 0 0 0px;   */
+    /* height: 15%; */
+    min-height: 2rem;
   }
   .container_text2 h3 {
     padding: 17px 0 0 17px;
@@ -964,6 +927,12 @@ p {
   .container_text2 p {
     padding: 3px 17px 15px 17px;
   }
+
+
+
+
+
+
 
 
 
@@ -982,7 +951,7 @@ p {
     text-align: center;
   
     /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-    padding: 7% 0% 0 0%;
+    padding: 25% 0% 0 0%;
   }
   
   .testimonial_container {
