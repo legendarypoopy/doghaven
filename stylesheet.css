@@ -164,6 +164,10 @@ p {
   .btntext {
     display: none;
   }
+  .sliderbtn:hover {
+    background: var(--clr_light);
+    color: var(--clr_primary);
+  }
 
 
   /* MOBILE SECTION: Intro1 */
