@@ -1108,10 +1108,20 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_light);
 }
+.divider2_image_on_mobile {
+  height: 230px;
+  background-image: url("dogshadow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Adjust image left/right */
+  /* background-position-x: left; */
+  /* Adjust image left/right/top/bottom */
+  background-position-y: top;
+}
 
 
 /* MOBILE SECTION: Footer  */
-.footer {
+footer {
   width: 100%;
   height: auto;
   background: var(--clr_light);
@@ -1121,26 +1131,26 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
   All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
 }
-.footer .info h1 {
+footer .info h1 {
   padding: 10% 6% 0 6%;
 }
-.footer .info h1 a {
+footer .info h1 a {
   color: var(--clr_accent);
   text-decoration: none;
 }
-.footer .info h1 a:hover {
+footer .info h1 a:hover {
   color: var(--clr_primary);
 }
 .arrow {
   display: none;
 }
-.footer .info p {
+footer .info p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 1.5% 6% 0% 6%;
   width: 88%;
 }
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
-.footer .copyright {
+footer .copyright {
   background: var(--clr_light);
   color: var(--clr_accent);
   display: flex;
@@ -1149,7 +1159,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   padding: 1% 6% 0% 6%;
   align-items: center;
 }
-.footer .copyright p {
+footer .copyright p {
   font-size: var(--font_s);
 }
 /* Button 5 style (for Footer only): White text and perimeter */
@@ -1408,16 +1418,63 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     margin: 1.2% 5% 5% 56%;
   }
 
-
-
-
-
-
   
+  /* TABLET SECTION: WORDS THAT WARM OUR HEARTS */
   .testimonial_title h1 {
+    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+    padding: 15% 6% 0 6%;
     color: blue;
-
   }
+  
+
+  /* TABLET SECTION: WHAT DO WE DO? */
+  .objective {
+    /* Image position and size adjustment */
+    background-image: url("goldenr.jpg");
+    background-repeat: no-repeat;
+    background-size: 58%;
+    /* Adjust image left/right */
+    background-position-x: 120%;
+    /* Adjust image left/right/top/bottom */
+    background-position-y: bottom;
+  }
+  .objective p {
+    padding: 3% 51% 6% 6%;
+  }
+  .divider1_image_on_mobile {
+    /* height is 0 bc to remove the mobile view image */
+    height: 0;
+    background-image: none;
+  }
+
+
+  /* TABLET SECTION: WHAT'S OUR SECERT? */
+  .secret {
+    /* Image position and size adjustment */
+    background-image: url("dogshadow.jpg");
+    background-repeat: no-repeat;
+    background-size: 58%;
+    /* Adjust image left/right */
+    background-position-x: left;
+    /* Adjust image left/right/top/bottom */
+    background-position-y: bottom;
+  }
+  .secret h1 {
+    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+    padding: 9% 6% 0 48%;
+  }
+  .secret p {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 3% 6% 6% 48%;
+    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
+    color: var(--clr_light);
+  }
+  .divider2_image_on_mobile {
+    /* height is 0 bc to remove the mobile view image */
+    height: 0;
+    background-image: none;
+  }
+
 
 }
 
@@ -1505,12 +1562,62 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   }
 
 
+  /* DESKTOP SECTION: NEWS title */
+  .news_title h1 {
+    padding: 8% 6% 3.5% 6%;
+  }    
 
 
+  /* DESKTOP SECTION: WORDS THAT WARM OUR HEARTS */
   .testimonial_title h1 {
-    color: red;
+    padding: 10% 6% 0 6%;
+    /* color: red; */
 
   }
-  
+
+
+  /* DESKTOP SECTION: WHAT DO WE DO? */  
+  .objective {
+    /* Image position and size adjustment */
+    /* background-image: url("goldenr.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-size: 30%;
+    /* Adjust image left/right */
+    background-position-x: 85%;
+    /* Adjust image left/right/top/bottom */
+    background-position-y: bottom;
+  }
+  .objective h1 {
+    padding: 6% 6% 0 6%;
+  }
+
+
+  /* DESKTOP SECTION: WHAT'S OR SECRET? */  
+  .secret {
+    background-size: 50%;
+    /* Adjust image left/right */
+    background-position-x: left;
+    /* Adjust image left/right/top/bottom */
+    background-position-y: bottom;
+  }
+  .secret h1 {
+    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+    padding: 6% 6% 0 48%;
+  }
+
+
+
+  /* DESKTOP SECTION: FOOTER */  
+  footer .info h1  {
+    padding: 5% 6% 0 6%;
+  }
+  footer .info p {
+    padding: 0.5% 60% 0% 6%;
+  }
+  .btn5 {
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 1% 5% 5% 6%;
+
+  }
 
 }
