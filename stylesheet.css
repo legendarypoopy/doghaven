@@ -146,12 +146,12 @@ nav ul li:last-child {
 }
 .nextbtn {
   position: absolute;
-  top: 85%;
+  top: 84%;
   right: 0;
 }
 .prevbtn {
   position: absolute;
-  top: 92%;
+  top: 91%;
   right: 0;
 }
 .btntext {
@@ -272,8 +272,10 @@ nav ul li:last-child {
   transition: .3s;
   
 /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 2.2% 6% 10% 33%;
-  /* left: -11%; */
+  /* margin: 2.2% 6% 10% 33%; */
+  margin: 2.2% 0% 10% 34%;
+  /* left: 34%; */
+
 
 /* Below not required after i added padding to give equal left and right spacing regardless of text length */
   /* width: 110px;
@@ -678,7 +680,7 @@ nav ul li:last-child {
   /* Note: height is 100% in respect to intro height of 100vh */
   height: 100%;
   /* Darken the background image so that text are more readable */
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 .intro4 .text {
   width: 100%;
@@ -688,18 +690,15 @@ nav ul li:last-child {
 .intro4 .text .dfa_logo {
   width: 33px;
   height: 33px;
-
   background-image: url("dfa\ logo.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 100%;
   position: relative;
-  /* top: 150px; */
-  left: 60%;
-  /* top: 30%; */
-  margin: 35% 0% 1% -53.1%;
+  margin: 35% 0% 0% 6.5%;
 }
 .intro4 .text h1 {
-  padding: 0% 6% 0 6%;
+  padding: 1% 6% 0 6%;
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
@@ -1242,7 +1241,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 @media only screen and (min-width: 768px) {
 
-  /* MOBILE SECTION: NAVBAR */
+  /* TABLET SECTION: NAVBAR */
   nav {
     /* z-index: 99; */
     /* display: flex; */
@@ -1316,11 +1315,104 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     display: none;
   }
 
+
+  /* TABLET SECTION: Slider buttons */
+  .sliderbtn {
+    width: 7%;
+  }
+
+
+  /* TABLET SECTION: Intro1 */
+  .intro1 {
+    width: 100%;
+
   
-  
-  
-  
-  
+    /* Image position and size adjustment */
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 180%;
+    /* background-size: cover; */
+    /* Adjust image left/right */
+    /* background-position-x: center; */
+    /* Adjust image top/bottom */
+    background-position-y: -1.5rem;
+    /* background-position: bottom; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position: 400px 100px; */
+    /* display: none; */
+  }
+  .container_image_on_mobile1 {
+    background: none;
+  }
+  .intro1 .text {
+    width: 100%;
+  }
+  .intro1 .text h1 {
+    padding: 8% 6% 0 6%;
+  }
+  .btn1 {
+  /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
+    /* margin: 2.2% 6% 10% 33%; */
+    margin: 1.2% 6% 10% 41%;
+  }
+
+
+  /* TABLET SECTION: Intro2 */
+  .intro2 .text {
+    width: 100%;
+  }
+  .intro2 .text h1 {
+    padding: 40% 44% 0 6%;
+  }
+  .btn2 {
+    margin: 1.2% 5% 5% 6%;
+  }
+
+
+  /* TABLET SECTION: Intro3 */
+  .intro3 .text h1 {
+    padding: 40% 7% 0 6%;
+  }
+  .intro3 .text h2 {
+    padding: 0.5% 65% 0% 6%;
+  }
+  .btn3 {
+  margin: 1.2% 5% 5% 6%; 
+  }
+
+
+  /* TABLET SECTION: Intro4 */
+   .overlay4 {
+    width: 50%;
+    /* shift the overlay to top/bottom/left/right */
+    margin: 0 0% 0 50%;
+    height: 100vh;
+  }
+  .intro4 .text .dfa_logo {
+    margin: 15% 0% 0 56.3%;
+  }
+  .intro4 .text h1 {
+    padding: 1% 6% 0 56%;
+  }
+  .intro4 .text h2 {
+    padding: 0.5% 6% 0% 56%;
+  }
+  .intro4 .text h3 {
+    padding: 8% 6% 0 56%;
+  }
+  .intro4 .text p {
+    padding: 2% 6% 0 56%;
+  }
+  .btn4 {
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 1.2% 5% 5% 56%;
+  }
+
+
+
+
+
+
   
   .testimonial_title h1 {
     color: blue;
@@ -1341,6 +1433,79 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   nav ul li a {
     padding: 17px 20px 17px 20px;
   }
+
+  .sliderbtn {
+    width: 8%;
+  }
+  .btntext {
+    display: contents;
+  }
+
+
+  /* DESKTOP SECTION: Intro1 */
+  .intro1 {
+    height: 100vh;
+    background-size: cover;
+  }
+  .intro1 .text h1 {
+    padding: 2% 6% 0 6%;
+  }
+  .btn1 {
+    /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
+      margin: 1.2% 6% 10% 45%;
+    }
+
+  /* DESKTOP SECTION: Intro2 */
+  .intro2 {
+    height: 100vh;
+  }
+  .intro2 .text h1 {
+    padding: 20% 60% 0 6%;
+  }
+  .btn2 {
+    margin: 0.9% 5% 5% 6%;
+  }
+
+  /* DESKTOP SECTION: Intro3 */
+  .intro3 {
+    height: 100vh;
+  }
+  .intro3 .text h1 {
+    padding: 20% 7% 0 6%;
+  }
+  .intro3 .text h2 {
+    padding: 0.5% 79% 0% 6%;
+  }
+  .btn3 {
+    margin: 0.9% 5% 5% 6%;
+  }
+
+  /* DESKTOP SECTION: Intro4 */
+  .intro4 {
+    height: 100vh;
+  }
+  .intro4 .text .dfa_logo {
+    margin: 10% 0% 0 59%;
+  }
+  .intro4 .text h1 {
+    padding: 0.5% 8% 0 59%;/
+  }
+  .intro4 .text h2 {
+    padding: 0.5% 8% 0% 59%;
+  }
+  .intro4 .text h3 {
+    padding: 8% 8% 0 59%;
+  }
+  .intro4 .text p {
+    padding: 2% 8% 0 59%;
+  }
+  .btn4 {
+  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+    margin: 0.9% 10% 5% 59%;
+  }
+
+
+
 
   .testimonial_title h1 {
     color: red;
