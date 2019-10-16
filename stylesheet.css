@@ -1236,34 +1236,13 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 
 
 
-/* ====================
-   START OF TABLET MODE 
-   ==================== */
+/* ===========================
+   START OF TABLET (IPAD) MODE 
+   =========================== */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
   /* MOBILE SECTION: NAVBAR */
-  
-  
-  
-  
-  
-  
-  
-  .testimonial_title h1 {
-    color: blue;
-
-  }
-
-}
-
-/* =====================
-   START OF DESKTOP MODE 
-   ===================== */
-
-/* @media only screen and (min-width: 768px) { */
-@media only screen and (min-width: 600px) {
-
   nav {
     /* z-index: 99; */
     /* display: flex; */
@@ -1306,7 +1285,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* adjust the full height of the nav text BOX height */
     /* height: 55px; */
     /* adjust the left and right gap of nav bar  */
-    margin: 0 4.7% 0 0;
+    margin: 0 4% 0 0;
     /* display: inline-flex; */
     font-size: var(--font_n);
     /* width: 0; */
@@ -1320,11 +1299,12 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     /* color: var(--clr_accent); */
     /* display: block; */
     /* adjust how big the gap of the text should fit in the box */
-    padding: 17px 20px 17px 20px;
+    padding: 17px 17px 17px 17px;
     /* font-size: var(--font_n); */
     /* white-spece: text will not jump to next line if no space for it */
     /* white-space: nowrap; */
     /* border-radius: 4px; */ 
+    /* background: pink; */
   }
   nav ul li:first-child {
     padding: 0;
@@ -1336,7 +1316,31 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
     display: none;
   }
 
+  
+  
+  
+  
+  
+  
+  .testimonial_title h1 {
+    color: blue;
 
+  }
+
+}
+
+/* =====================
+   START OF DESKTOP MODE 
+   ===================== */
+
+@media only screen and (min-width: 1025px) {
+  
+  nav ul {
+    margin: 0 4.7% 0 0;
+  }
+  nav ul li a {
+    padding: 17px 20px 17px 20px;
+  }
 
   .testimonial_title h1 {
     color: red;
