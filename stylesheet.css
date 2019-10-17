@@ -866,7 +866,7 @@ nav ul li:last-child {
   min-height: 22rem;
   /* height: 85%; */
   /* background: url("straits-times-test.jpg"); */
-  background: url("straits-times.jpg");
+  background: url("IMG/straits-times.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1005,9 +1005,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   color: var(--clr_accent);
 }
 .divider1_image_on_mobile {
-    /* Image position and size adjustment */
     height: 300px;
-    background-image: url("IMG/goldenr.JPG");
+    background-image: url("IMG/goldenr.png");
     background-repeat: no-repeat;
     background-size: contain;
     /* Adjust image left/right */
@@ -1382,8 +1381,7 @@ footer .copyright p {
 
   /* TABLET SECTION: WHAT DO WE DO? */
   .objective {
-    /* Image position and size adjustment */
-    background-image: url("IMG/goldenr.JPG");
+    background-image: url("IMG/goldenr.png");
     background-repeat: no-repeat;
     background-size: 58%;
     /* Adjust image left/right */
@@ -1539,9 +1537,6 @@ footer .copyright p {
 
   /* DESKTOP SECTION: WHAT DO WE DO? */  
   .objective {
-    /* Image position and size adjustment */
-    /* background-image: url("goldenr.jpg"); */
-    /* background-repeat: no-repeat; */
     background-size: 30%;
     /* Adjust image left/right */
     background-position-x: 85%;
