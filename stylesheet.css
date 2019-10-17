@@ -1063,7 +1063,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   color: var(--clr_light);
 }
 .divider2_image_on_mobile {
-  height: 230px;
+  height: 260px;
   background-image: url("IMG/dogshadow.JPG");
   background-repeat: no-repeat;
   background-size: 120%;
