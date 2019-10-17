@@ -74,7 +74,7 @@ nav {
 nav #logo {
   background-color: var(--clr_shade);
   height: 100px;
-  background-image: url("logo.png");
+  background-image: url("IMG/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   /* Cannot use margin bc this is background image, so will have a space when i add background color behind
@@ -99,6 +99,9 @@ nav ul li a {
   /* text-align: left; */
   text-decoration: none;
   color: var(--clr_accent);
+  /* text-shadow: 2px 2px 4px #FFF; */
+  /* text-shadow: 3px 5px 2px #ffffff; */
+  text-shadow: 0.5px 0.5px 0 #F3F3F3, 0.5px -0.5px 0 #F3F3F3, -0.5px 0.5px 0 #F3F3F3, -0.5px -0.5px 0 #F3F3F3, 0.5px 0px 0 #F3F3F3, 0px 0.5px 0 #F3F3F3, -0.5px 0px 0 #F3F3F3, 0px -0.5px 0 #F3F3F3;
   display: block;
   white-space: nowrap;
   padding: 3% 6%;
@@ -195,20 +198,9 @@ nav ul li:last-child {
   /* Adjust image left/right/top/bottom */
   /* background-position: -50px 100px; */
   }
-  /* overlay not required for this div bc want  image (hero1) to remain white  */
-  /* .overlay1 { */
-  /* Position absolute will make the overlay layer pop out but then text will be hidden behind (can't see) in this way. 
-  Therefore, the text need to position relative so they will be visible again */
-  /* position: absolute; */
-  /* width: 100%; */
-  /* Note: height is 100% in respect to intro height of 100vh */
-  /* height: 100vh; */
-  /* Darken the background image so that text are more readable */
-  /* background: rgba(0, 0, 0, 0.4); */
-  /* } */
   .container_image_on_mobile1 {
     height: 400px;
-    background-image: url("hero.jpg");
+    background-image: url("IMG/hero.jpg");
     background-repeat: no-repeat;
     background-size: 580%;
     /* Adjust image left/right */
@@ -334,7 +326,7 @@ nav ul li:last-child {
   /* background: #eeeeee; */
 
   /* Image position and size adjustment */
-  background-image: url("grooming\ course.jpg");
+  background-image: url("IMG/grooming\ course.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -491,7 +483,7 @@ nav ul li:last-child {
   /* background: #eeeeee; */
 
   /* Image position and size adjustment */
-  background-image: url("home\ stay.jpg");
+  background-image: url("IMG/homestay.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: -600px; */
@@ -517,21 +509,7 @@ nav ul li:last-child {
 }
 .intro3 .text {
   width: 100%;
-  /* height: 100vh; */
-  /* float: left; */
 }
-/* logo not required for this div
-.intro3 .text .dfa_logo {
-  width: 33px;
-  height: 33px;
-
-  background-image: url("dfa\ logo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 60%;
-  top: 16%;
-} */
 .intro3 .text h1 {
   padding: 70% 6% 0 6%;
   /* Position relative will make the text visible as there is an overlay above it */
@@ -632,30 +610,6 @@ nav ul li:last-child {
   height: 650px;
   position: relative;
   overflow: hidden;
-
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
-  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
-  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
-  /* padding: 10% 5% 10% 5%; */
-
-  /* In case need to adjust the WHOLE intro down when not enough space */
-  /* margin: 0px 0 0 0; */
-
-  /* Just want to see the full height on phone, to toggle off when done */
-  /* background: var(--clr_primary); */
-
-  /* Image position and size adjustment */
-  /* background-image: url("DFA\ yahoo\ video\ segment.mp4"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* this will shift the entire image down so as to avoid the nav bar from blocking the image at the top */
-  /* background-position-y: -51%; */
-  /* background-position: top; */
-  /* background-size: 60%; */
-  /* Adjust image left/right */
-  /* background-position-x: 90%; */
-  /* Adjust image left/right/top/bottom */
-  /* background-position: 400px 100px; */
 }
 .video_bg {
   position: absolute;
@@ -690,7 +644,7 @@ nav ul li:last-child {
 .intro4 .text .dfa_logo {
   width: 33px;
   height: 33px;
-  background-image: url("dfa\ logo.png");
+  background-image: url("IMG/dfa\ logo.png");
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-size: 100%;
@@ -849,10 +803,11 @@ nav ul li:last-child {
 .container_image1 {
   width: 100%;
   min-height: 22rem;
-  background: url("okto0.jpg");
+  background: url("IMG/okto.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: var(--clr_primary);
   /* overflow: hidden; */
 }
 /* .video_okto { */
@@ -915,7 +870,7 @@ nav ul li:last-child {
   background-repeat: no-repeat;
   background-position: center;
   /* overflow: hidden; */
-  /* position: relative; */
+  background-color: var(--clr_primary);
 }
 .container_text2 {
   /* height: 15%; */
@@ -1051,7 +1006,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 .divider1_image_on_mobile {
     /* Image position and size adjustment */
     height: 300px;
-    background-image: url("goldenr.jpg");
+    background-image: url("IMG/goldenr.JPG");
     background-repeat: no-repeat;
     background-size: contain;
     /* Adjust image left/right */
@@ -1110,7 +1065,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 .divider2_image_on_mobile {
   height: 230px;
-  background-image: url("dogshadow.jpg");
+  background-image: url("IMG/dogshadow.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   /* Adjust image left/right */
@@ -1147,7 +1102,7 @@ footer .info h1 a:hover {
 footer .info p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 1.5% 6% 0% 6%;
-  width: 88%;
+  /* width: 88%; */
 }
 /* SPECIAL NOTE: For button gap adjustment (top/bottom/left/right), go to .btn3 -> Gap adjustment for button  */
 footer .copyright {
@@ -1245,6 +1200,7 @@ footer .copyright p {
 
 
 
+
 /* ===========================
    START OF TABLET (IPAD) MODE 
    =========================== */
@@ -1335,10 +1291,8 @@ footer .copyright p {
   /* TABLET SECTION: Intro1 */
   .intro1 {
     width: 100%;
-
-  
     /* Image position and size adjustment */
-    background-image: url("hero.jpg");
+    background-image: url("IMG/hero.jpg");
     background-repeat: no-repeat;
     background-size: 180%;
     /* background-size: cover; */
@@ -1423,14 +1377,13 @@ footer .copyright p {
   .testimonial_title h1 {
     /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
     padding: 15% 6% 0 6%;
-    color: blue;
   }
   
 
   /* TABLET SECTION: WHAT DO WE DO? */
   .objective {
     /* Image position and size adjustment */
-    background-image: url("goldenr.jpg");
+    background-image: url("IMG/goldenr.JPG");
     background-repeat: no-repeat;
     background-size: 58%;
     /* Adjust image left/right */
@@ -1451,7 +1404,7 @@ footer .copyright p {
   /* TABLET SECTION: WHAT'S OUR SECERT? */
   .secret {
     /* Image position and size adjustment */
-    background-image: url("dogshadow.jpg");
+    background-image: url("IMG/dogshadow.JPG");
     background-repeat: no-repeat;
     background-size: 58%;
     /* Adjust image left/right */
@@ -1475,6 +1428,11 @@ footer .copyright p {
     background-image: none;
   }
 
+  /* TABLET SECTION: WHAT'S OUR SECERT? */
+  footer .info p {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 1.5% 36% 0% 6%;
+  }
 
 }
 
@@ -1492,7 +1450,7 @@ footer .copyright p {
   }
 
   .sliderbtn {
-    width: 8%;
+    width: 7.8%;
   }
   .btntext {
     display: contents;
@@ -1503,6 +1461,9 @@ footer .copyright p {
   .intro1 {
     height: 100vh;
     background-size: cover;
+    /* background: pink; */
+    /* background-size: 100%; */
+    background-position-y: 0;
   }
   .intro1 .text h1 {
     padding: 2% 6% 0 6%;
@@ -1571,8 +1532,6 @@ footer .copyright p {
   /* DESKTOP SECTION: WORDS THAT WARM OUR HEARTS */
   .testimonial_title h1 {
     padding: 10% 6% 0 6%;
-    /* color: red; */
-
   }
 
 
@@ -1612,7 +1571,7 @@ footer .copyright p {
     padding: 5% 6% 0 6%;
   }
   footer .info p {
-    padding: 0.5% 60% 0% 6%;
+    padding: 0.5% 61% 0% 6%;
   }
   .btn5 {
   /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
