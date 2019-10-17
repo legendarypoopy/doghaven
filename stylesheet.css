@@ -94,17 +94,18 @@ nav ul li {
   list-style: none;
   }
 nav ul li a {
-  /* width: 100%; */
-  /* align-self: center; */
-  /* text-align: left; */
-  text-decoration: none;
   color: var(--clr_accent);
-  /* text-shadow: 2px 2px 4px #FFF; */
-  /* text-shadow: 3px 5px 2px #ffffff; */
-  text-shadow: 0.5px 0.5px 0 #F3F3F3, 0.5px -0.5px 0 #F3F3F3, -0.5px 0.5px 0 #F3F3F3, -0.5px -0.5px 0 #F3F3F3, 0.5px 0px 0 #F3F3F3, 0px 0.5px 0 #F3F3F3, -0.5px 0px 0 #F3F3F3, 0px -0.5px 0 #F3F3F3;
+  text-shadow:
+		/* -1px -1px 0 rgba(255,255,255,0.5), */
+		1px -1px 0 rgba(255,255,255,0.5);
+		/* -1px 1px 0 rgba(255,255,255,0.5), */
+		/* 1px 1px 0 rgba(255,255,255,0.5); */
+  /* text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px white,0px 0px 10px white; */
   display: block;
   white-space: nowrap;
   padding: 3% 6%;
+  text-decoration: none;
+  /* font-weight: 900; */
 }
 nav ul li a:hover {
   color: var(--clr_primary);
@@ -1029,20 +1030,19 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
   All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
   
-  background: var(--clr_dark);
-  
-    /* Image position and size adjustment */
-    /* background-image: url("cat-window-flipped.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-size: 35%; */
+  background-image: linear-gradient(var(--clr_dark), rgba(14, 9, 5));
+  /* Image position and size adjustment */
+  /* background-image: url("cat-window-flipped.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-size: 35%; */
 
-    /* Adjust image left/right/top/bottom */
-    /* Adjust image left/right */
-    /* background-position: left; */
-    /* background-position: 400px 100px; */
-    /* background-position-x: 9%; */
-    /* background-position-y: bottom; */
+  /* Adjust image left/right/top/bottom */
+  /* Adjust image left/right */
+  /* background-position: left; */
+  /* background-position: 400px 100px; */
+  /* background-position-x: 9%; */
+  /* background-position-y: bottom; */
 }
 .secret .secret_text {
   width: 100%;
@@ -1067,7 +1067,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   height: 230px;
   background-image: url("IMG/dogshadow.JPG");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
   /* Adjust image left/right */
   /* background-position-x: left; */
   /* Adjust image left/right/top/bottom */
@@ -1387,7 +1387,7 @@ footer .copyright p {
     background-repeat: no-repeat;
     background-size: 58%;
     /* Adjust image left/right */
-    background-position-x: 120%;
+    background-position-x: 110%;
     /* Adjust image left/right/top/bottom */
     background-position-y: bottom;
   }
@@ -1403,7 +1403,7 @@ footer .copyright p {
 
   /* TABLET SECTION: WHAT'S OUR SECERT? */
   .secret {
-    /* Image position and size adjustment */
+    background-color: var(--clr_dark);
     background-image: url("IMG/dogshadow.JPG");
     background-repeat: no-repeat;
     background-size: 58%;
@@ -1450,10 +1450,12 @@ footer .copyright p {
   }
 
   .sliderbtn {
-    width: 7.8%;
+    padding: calc(var(--font_n)/2) calc(var(--font_n)/3);
+    width: 6.6%;
   }
   .btntext {
     display: contents;
+    /* padding: 1px 0px; */
   }
 
 
@@ -1466,7 +1468,7 @@ footer .copyright p {
     background-position-y: 0;
   }
   .intro1 .text h1 {
-    padding: 2% 6% 0 6%;
+    padding: 4% 6% 0 6%;
   }
   .btn1 {
     /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
@@ -1478,7 +1480,7 @@ footer .copyright p {
     height: 100vh;
   }
   .intro2 .text h1 {
-    padding: 20% 60% 0 6%;
+    padding: 20% 57% 0 6%;
   }
   .btn2 {
     margin: 0.9% 5% 5% 6%;
@@ -1492,7 +1494,7 @@ footer .copyright p {
     padding: 20% 7% 0 6%;
   }
   .intro3 .text h2 {
-    padding: 0.5% 79% 0% 6%;
+    padding: 0.5% 70% 0% 6%;
   }
   .btn3 {
     margin: 0.9% 5% 5% 6%;
@@ -1548,6 +1550,9 @@ footer .copyright p {
   }
   .objective h1 {
     padding: 6% 6% 0 6%;
+  }
+  .objective p {
+    padding: 3% 52% 6% 6%;
   }
 
 
