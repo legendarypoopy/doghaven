@@ -1000,7 +1000,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 .objective p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 3% 6% 6% 6%;
-  
+
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_accent);
 }
@@ -1016,7 +1016,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 
 
-
 /* MOBILE SECTION: WHAT'S OUR SECRET? */
 .secret {
   /* Just want to see the full height on phone, to toggle off when done */
@@ -1029,7 +1028,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
   All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
   
-  background-image: linear-gradient(var(--clr_dark), rgba(14, 9, 5));
+  background-color: var(--clr_dark);
+  /* background-image: linear-gradient(var(--clr_dark), rgba(14, 9, 5)); */
   /* Image position and size adjustment */
   /* background-image: url("cat-window-flipped.jpg"); */
   /* background-repeat: no-repeat; */
