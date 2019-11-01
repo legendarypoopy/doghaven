@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
   <!-- this is for facebook, youtube, map marker icons at footer -->
   <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+  <!-- this is javascript for marquee in Testimonial div -->
+  <script src="JS/marquee.js"></script>
   <title>Dog Haven</title>
 </head>
 
@@ -184,13 +186,25 @@
     </div>
 
 
-
     
     
     <!-- SECTION: WORDS THAT WARM OUR HEARTS -->
     <div class="testimonial_title">
       <h1>WORDS THAT WARM OUR HEARTS</h1>
     </div>
+
+
+
+
+    <div id="marqueeTwo" class="example" style="width:100%">
+      Maggie is the best groomer in Singapore. Bording service is also good. We were able to enjoy our Singapore lives because of her support. Thanks a lot. シンガポールで一番信頼できたグルーマーさんです。お預かりもして頂けて夜は一緒に寝てもらえるので安心して何度もお願いできました。本当に感謝しています。お世話になりました。 - Akiko Takei &#9679 Maggie you are the BEST for me and my fur kids! ❤ - Irene Chia &#9679 &nbsp;
+      Have a good trip Einstein, watch your head. I'm too loud. I can't believe it. I'm never gonna get a chance to
+      play in front of anybody.
+    </div>
+
+
+
+
     
     <div class="testimonial_container">
 
@@ -263,6 +277,8 @@
 
 
 
+
+
   <footer class="footer">
     <div class="info">
       <h1><a href="#" class="letschat">LET'S CHAT <span class="arrow">&#10142</span></a></h1>
@@ -283,9 +299,13 @@
 
 
 
+
+
+
+
   <!-- ***IMPTT: JSnavbarshrink.js won't work if this is activated -->
   <!-- JS: When user scrolls down, hide the navbar. When  user scrolls up, show the navbar -->
-  <script type="text/javascript" src="JS/JShidenavbar.js"> </script>
+  <!-- <script type="text/javascript" src="JS/JShidenavbar.js"> </script> -->
 
   <!-- JS TO CHANGE NAVBAR BACKGROUND COLOR IF SCROLL DOWN  -->
   <script type="text/javascript" src="JS/JSnavbarcolor.js"> </script>
@@ -302,6 +322,28 @@
 
   <!-- JS FOR Footer BCG change -->
   <script type="text/javascript" src="JS/JSfooterbcg.js"> </script>
+
+
+  <!-- JS FOR MARQUEE (TESTIMONIAL DIV) -->
+  <script>
+    // new Marquee('marqueeOne');
+
+    new Marquee('marqueeTwo', {
+      direction: 'rtl',
+    });
+
+    // new Marquee('marqueeThree', {
+    //   speed: 1,
+
+    // });
+    // new Marquee('marqueeFour', {
+    //   bgcolor: 'tomato',
+    //   textcolor: 'powder',
+    //   opacity: .7,
+    // });
+  </script>
+
+  
 
 
 

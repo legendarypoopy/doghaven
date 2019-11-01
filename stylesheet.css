@@ -650,7 +650,7 @@ nav ul li:last-child {
   /* background-size: cover; */
   background-size: 100%;
   position: relative;
-  margin: 35% 0% 0% 6.5%;
+  margin: 25% 0% 0% 6.5%;
 }
 .intro4 .text h1 {
   padding: 1% 6% 0 6%;
@@ -690,7 +690,7 @@ nav ul li:last-child {
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
-  max-height: 200px;
+  max-height: 270px;
   overflow: hidden;
 }
 /* Button 4 style: White text and perimeter */
@@ -885,6 +885,40 @@ nav ul li:last-child {
 }
 
 
+
+/* TEST MOVING TEXT */
+.testimonial_holder {
+  background:#ccc;
+  padding: 3rem 0;
+  /* overflow: hidden; */
+}
+.moving_text1 {
+  white-space: nowrap;
+  animation : slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translatex(100%)
+  }
+
+  100% {
+    transform: translatex(-300%)
+  }
+}
+
+
+@keyframes  {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0%);
+  }
+}
+
+
+
 /* MOBILE SECTION: WORDS THAT WARM OUR HEARTS */  
 .testimonial_title {
   width: 100%;
@@ -1028,8 +1062,8 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
   All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
   
-  background-color: var(--clr_dark);
-  /* background-image: linear-gradient(var(--clr_dark), rgba(14, 9, 5)); */
+  /* background-color: var(--clr_dark); */
+  background-image: linear-gradient(var(--clr_dark), rgba(14, 9, 5));
   /* Image position and size adjustment */
   /* background-image: url("cat-window-flipped.jpg"); */
   /* background-repeat: no-repeat; */
@@ -1352,7 +1386,7 @@ footer .copyright p {
     height: 100vh;
   }
   .intro4 .text .dfa_logo {
-    margin: 15% 0% 0 56.3%;
+    margin: 11% 0% 0 56.3%;
   }
   .intro4 .text h1 {
     padding: 1% 6% 0 56%;
@@ -1506,7 +1540,7 @@ footer .copyright p {
     margin: 10% 0% 0 59%;
   }
   .intro4 .text h1 {
-    padding: 0.5% 8% 0 59%;/
+    padding: 0.5% 8% 0 59%;
   }
   .intro4 .text h2 {
     padding: 0.5% 8% 0% 59%;
