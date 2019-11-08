@@ -27,7 +27,7 @@ var slides = document.getElementsByClassName("mySlides");
   aa.style.display = 'block';
 
 // Auto slide every ____ milliseconds
-setInterval(nextSlide , 4800);
+setInterval(nextSlide , 5000);
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
