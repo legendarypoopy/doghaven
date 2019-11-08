@@ -91,15 +91,23 @@ nav ul li {
   list-style: none;
   }
 nav ul li a {
-  color: var(--clr_accent);
+  color: var(--clr_accent);  
   text-shadow:
-    2px 2px 8px white;
+  -1px -1px 0 #fff,  
+  1px -1px 0 #fff,
+  -1px  1px 0 #fff,
+  1px  1px 0 #fff;
+  
+  /* text-shadow: 2px 2px 8px white; */
 
-		/* -1px -1px 0 rgba(255,255,255,0.5), */
-		/* 1px -1px 0 rgba(255,255,255,0.5); */
-		/* -1px 1px 0 rgba(255,255,255,0.5), */
-		/* 1px 1px 0 rgba(255,255,255,0.5); */
+  /* text-shadow: */
+  /* -1px -1px 0 rgba(255,255,255,0.5), */
+  /* 1px -1px 0 rgba(255,255,255,0.5); */
+  /* -1px 1px 0 rgba(255,255,255,0.5), */
+  /* 1px 1px 0 rgba(255,255,255,0.5); */
+
   /* text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px white,0px 0px 10px white; */
+ 
   display: block;
   white-space: nowrap;
   padding: 3% 6%;
@@ -231,11 +239,11 @@ nav ul li:last-child {
 
 
 
-.intro1 .text {
+.intro1_text {
   width: 100%;
 }
 
-.intro1 .text h1 {
+.intro1_header1 {
   padding: 405px 10% 0 10%;
   color: var(--clr_accent);
   /* Position relative will make the text visible as there is an overlay above it */
@@ -243,7 +251,7 @@ nav ul li:last-child {
   /* align text to center of the page */
   text-align: center;
 }
-.intro1 .text h2 {
+.intro1_header2 {
   padding: 0.5% 12% 0% 12%;
   color: var(--clr_accent);
   /* Position relative will make the text visible as there is an overlay above it */
@@ -364,18 +372,16 @@ nav ul li:last-child {
   /* Darken the background image so that text are more readable */
   background: rgba(0, 0, 0, 0.3);
 }
-.intro2 .text {
+.intro2_text {
   width: 100%;
-  /* height: 100vh; */
-  /* float: left; */
 }
-.intro2 .text h1 {
+.intro2_header1 {
   padding: 70% 6% 0 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
-.intro2 .text h2 {
+.intro2_header2 {
   padding: 0.5% 6% 0% 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
@@ -468,16 +474,16 @@ nav ul li:last-child {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
-.intro3 .text {
+.intro3_text {
   width: 100%;
 }
-.intro3 .text h1 {
+.intro3_header1 {
   padding: 70% 6% 0 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
-.intro3 .text h2 {
+.intro3_header2 {
   padding: 0.5% 40% 0% 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
@@ -571,12 +577,12 @@ nav ul li:last-child {
   /* Darken the background image so that text are more readable */
   background: rgba(0, 0, 0, 0.5);
 }
-.intro4 .text {
+.intro4_text {
   width: 100%;
   /* height: 100vh; */
   /* float: left; */
 }
-.intro4 .text .dfa_logo {
+.dfa_logo {
   width: 33px;
   height: 33px;
   background-image: url("IMG/dfa\ logo.png");
@@ -586,19 +592,19 @@ nav ul li:last-child {
   position: relative;
   margin: 30% 0% 0% 6.5%;
 }
-.intro4 .text h1 {
+.intro4_header1 {
   padding: 1% 6% 0 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
-.intro4 .text h2 {
+.intro4_header2 {
   padding: 0.5% 6% 0% 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
-.intro4 .text p {
+.intro4_body {
   padding: 2% 6% 0 6%;
   color: var(--clr_light);
   /* Position relative will make the text visible as there is an overlay above it */
@@ -1238,15 +1244,8 @@ footer .copyright p {
   }
 
 
-  
 
-  .slider_image1 {
-    /* background: none; */
-  }
-  .intro1 .text {
-    width: 100%;
-  }
-  .intro1 .text h1 {
+  .intro1_header1 {
     padding: 54% 6% 0 6%;
   }
   .btn1 {
@@ -1257,10 +1256,7 @@ footer .copyright p {
 
 
   /* TABLET SECTION: Intro2 */
-  .intro2 .text {
-    width: 100%;
-  }
-  .intro2 .text h1 {
+  .intro2_header1 {
     padding: 40% 44% 0 6%;
   }
   .btn2 {
@@ -1269,10 +1265,10 @@ footer .copyright p {
 
 
   /* TABLET SECTION: Intro3 */
-  .intro3 .text h1 {
+  .intro3_header1 {
     padding: 40% 7% 0 6%;
   }
-  .intro3 .text h2 {
+  .intro3_header2 {
     padding: 0.5% 65% 0% 6%;
   }
   .btn3 {
@@ -1287,19 +1283,16 @@ footer .copyright p {
     margin: 0 0% 0 50%;
     height: 100vh;
   }
-  .intro4 .text .dfa_logo {
+  .dfa_logo {
     margin: 11% 0% 0 56.3%;
   }
-  .intro4 .text h1 {
+  .intro4_header1 {
     padding: 1% 6% 0 56%;
   }
-  .intro4 .text h2 {
+  .intro4_header2 {
     padding: 0.5% 6% 0% 56%;
   }
-  .intro4 .text h3 {
-    padding: 8% 6% 0 56%;
-  }
-  .intro4 .text p {
+  .intro4_body {
     padding: 2% 6% 0 56%;
   }
   .btn4 {
@@ -1393,15 +1386,20 @@ footer .copyright p {
   }
 
 
+
+
   /* DESKTOP SECTION: Intro1 */
+  .intro1 {
+    height: 100vh;
+  }
   .slider_image1 {
     height: 100vh;
     background-size: cover;
     /* background: pink; */
     /* background-size: 100%; */
-    background-position-y: 0;
+    /* background-position-y: 0; */
   }
-  .intro1 .text h1 {
+  .intro1_header1 {
     padding: 34% 6% 0 6%;
   }
   .btn1 {
@@ -1413,7 +1411,7 @@ footer .copyright p {
   .intro2 {
     height: 100vh;
   }
-  .intro2 .text h1 {
+  .intro2_header1 {
     padding: 20% 57% 0 6%;
   }
   .btn2 {
@@ -1424,10 +1422,10 @@ footer .copyright p {
   .intro3 {
     height: 100vh;
   }
-  .intro3 .text h1 {
+  .intro3_header1 {
     padding: 20% 7% 0 6%;
   }
-  .intro3 .text h2 {
+  .intro3_header2 {
     padding: 0.5% 70% 0% 6%;
   }
   .btn3 {
@@ -1438,19 +1436,16 @@ footer .copyright p {
   .intro4 {
     height: 100vh;
   }
-  .intro4 .text .dfa_logo {
+  .dfa_logo {
     margin: 10% 0% 0 59%;
   }
-  .intro4 .text h1 {
+  .intro4_header1 {
     padding: 0.5% 8% 0 59%;
   }
-  .intro4 .text h2 {
+  .intro4_header2 {
     padding: 0.5% 8% 0% 59%;
   }
-  .intro4 .text h3 {
-    padding: 8% 8% 0 59%;
-  }
-  .intro4 .text p {
+  .intro4_body {
     padding: 2% 8% 0 59%;
   }
   .btn4 {
