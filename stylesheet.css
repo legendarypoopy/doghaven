@@ -661,7 +661,7 @@ nav ul li:last-child {
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
-  grid-gap: var(--font_s);
+  grid-gap: var(--font_m) var(--font_s);
   padding: 0 6%;
 }
 
