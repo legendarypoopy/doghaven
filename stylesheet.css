@@ -203,10 +203,10 @@ nav ul li:last-child {
   overflow: hidden;
 }
 .slider_image1 {
-  height: 400px;
+  height: 450px;
   background-image: url("IMG/hero.jpg");
   background-repeat: no-repeat;
-  background-size: 580%;
+  background-size: 570%;
   /* Adjust image left/right */
   background-position-x: 48.3%;
   /* Adjust image top/bottom */
@@ -685,20 +685,20 @@ nav ul li:last-child {
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
-  grid-gap: var(--font_m) var(--font_s);
+  grid-gap: var(--font_m) var(--font_m);
   padding: 0 6%;
 }
 
 .news1 {
   background: var(--clr_light);    
-  transition: transform 1s;
+  transition: transform 250ms;
 }
 .news1:hover {  
   /* use below box-shadow if using light background: */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49);
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 .news1_link:link {
   color: var(--clr_accent);
@@ -753,14 +753,14 @@ nav ul li:last-child {
 
 .news2 {
   background: var(--clr_light);
-  transition: transform 1s;
+  transition: transform 250ms;
 }
 .news2:hover {
   /* use below box-shadow if using light background: */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49);
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 .news2_link:link {
   color: var(--clr_accent);
