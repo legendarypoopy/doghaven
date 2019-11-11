@@ -654,24 +654,25 @@ nav ul li:last-child {
 
 /* MOBILE SECTION: News Title only */
 .news_title {
-  background: var(--clr_dark);
-  width: 100%;
+  /* background: var(--clr_dark); */
+  /* width: 100%; */
 }
-.news_title h1 {
-  padding: 15% 6% 6% 6%;
-  color: var(--clr_light);
+.news_title {
+  padding: 12% 6% 6% 6%;
+  color: var(--clr_accent);
+  background: var(--clr_shade);
 }  
 
 
 /* MOBILE SECTION: News containers */
 .news_all {
-  background: var(--clr_dark);
+  background: var(--clr_shade);
   display: grid;
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
   grid-gap: var(--font_m);
-  padding: 0 6%;
+  padding: 0 6% 15% 6%;
 }
 
 .news1 {
@@ -680,9 +681,10 @@ nav ul li:last-child {
 }
 .news1:hover {  
   /* use below box-shadow if using light background: */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49);
+  /* use below box-shadow if using dark background: */
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49); */
   transform: scale(1.015);
 }
 .news1_link:link {
@@ -729,9 +731,10 @@ nav ul li:last-child {
 }
 .news2:hover {
   /* use below box-shadow if using light background: */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* use below box-shadow if using dark background: */
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49); */
   transform: scale(1.015);
 }
 .news2_link:link {
@@ -773,26 +776,106 @@ nav ul li:last-child {
 
 
 
+/* MOBILE SECTION: MILESTONES */
+.milestone_title {
+  padding: 12% 6% 6% 6%;
+  background: var(--clr_dark);
+  color: var(--clr_light);
+}
+
+
+/* MOBILE SECTION: MILESTONES GRID NEW CSS*/
+.milestone_all {
+  background: var(--clr_dark);
+  color: var(--clr_light);
+  display: grid;
+  /* Can change 1 to auto-fit and it will be responsive
+  18rem is the biggest it can go before the screen can't fit for small mobile devices */
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 2fr));
+  grid-gap: var(--font_m) var(--font_s);
+  padding: 0% 3% 0% 6%;
+
+  grid-template-areas: 
+  "milestone_grid1 milestone_grid2"
+  "milestone_grid3 milestone_grid4"
+  "milestone_grid5 milestone_grid6";
+}
+
+/* GRID NAMES */
+.milestone_grid1 {
+  grid-area: milestone_grid1;
+}
+.milestone_grid2 {
+  grid-area: milestone_grid2;
+}
+.milestone_grid3 {
+  grid-area: milestone_grid3;
+}
+.milestone_grid4 {
+  grid-area: milestone_grid4;
+}
+.milestone_grid5 {
+  grid-area: milestone_grid5;
+}
+.milestone_grid6 {
+  grid-area: milestone_grid6;
+}
+
+
+.wreath_left {
+  background-image: url("IMG/laurel\ wreath\ left.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 60px;
+  display: inline-block;
+  width: 15%;
+}
+.middle {
+  display: inline-block;
+  width: 57%;
+  vertical-align: top; 
+}
+.milestone_text1 {
+  text-align: center;
+  font-size: calc(var(--font_n) * 0.8);
+}
+.milestone_text2 {
+  text-align: center;
+  font-size: calc(var(--font_n) * 1.0);
+}
+.wreath_right {
+  background-image: url("IMG/laurel\ wreath\ right.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 60px;
+  display: inline-block;
+  width: 15%;
+}
+
+
+
 
 /* MOBILE SECTION: WORDS THAT WARM OUR HEARTS */  
-.testimonial_title {
+.testimonial_title_container {
   width: 100%;
   background: var(--clr_dark);
 }
-.testimonial_title h1 {
+.testimonial_title_only {
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_light);
   /* align text to center of the page */
   text-align: center;
 
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-  padding: 25% 6% 0 6%;
+  padding: 19% 6% 0 6%;
 }
 
 .testimonial_container {
   width: 100%;
   /* this is to control the height of the entire scrolling container */
-  height: 280px;
+  height: 260px;
   background: var(--clr_dark);
   /* background: tomato; */
   /* IMPTT: this testimonial_container to help set the width (as relative) so that line1a and line1b (as absolute will follow testimonial_container --- relative width) and won't stretch out to farrrrrrrr right (note: to eliminate horizontal scroll bar on screen!) */
@@ -866,14 +949,14 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   /* height: 600px; */
   /* float: left;   */
 }
-.objective h1 {
+.objective_header {
   /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
   color: var(--clr_accent);
 
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-  padding: 10% 6% 0 6%;
+  padding: 12% 6% 0 6%;
 }
-.objective p {
+.objective_body {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 3% 6% 6% 6%;
 
@@ -930,7 +1013,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   color: var(--clr_light);
 
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-  padding: 10% 6% 0 6%;
+  padding: 12% 6% 0 6%;
 }
 .secret p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
@@ -1232,11 +1315,51 @@ footer .copyright p {
     margin: 1.2% 5% 5% 56%;
   }
 
+
+
+  /* TABLET SECTION: News Title only */
+  .news_title {
+    padding: 9% 6% 3% 6%;
+  }
+
+  .news_all {
+    padding: 0 6% 10% 6%;
+  }
+
+
+  /* TABLET SECTION: MILESTONES */
+  .milestone_title {
+    padding: 8% 6% 6% 6%;
+  }
+
+  .milestone_all {
+    /* Can change 1 to auto-fit and it will be responsive
+    18rem is the biggest it can go before the screen can't fit for small mobile devices */
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 3fr));
+    grid-gap: var(--font_m) 0;
+    padding: 0% 2% 0% 6%;
+
+    grid-template-areas: 
+    "milestone_grid1 milestone_grid3 milestone_grid5"
+    "milestone_grid2 milestone_grid4 milestone_grid6";
+  }
   
+  .middle {
+    width: 47%;
+  }
+  .milestone_text1 {
+    font-size: calc(var(--font_n) * 0.9);
+  }
+  .milestone_text2 {
+    font-size: calc(var(--font_n) * 1.15);
+  }
+
+
+
   /* TABLET SECTION: WORDS THAT WARM OUR HEARTS */
-  .testimonial_title h1 {
+  .testimonial_title_only {
     /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-    padding: 15% 6% 0 6%;
+    padding: 12% 6% 0 6%;
   }
   
 
@@ -1251,7 +1374,10 @@ footer .copyright p {
     /* Adjust image left/right/top/bottom */
     /* background-position-y: bottom; */
   }
-  .objective p {
+  .objective_header {
+    padding: 9% 6% 0 6%;
+  }
+  .objective_body {
     padding: 3% 51% 6% 6%;
   }
   .divider1_image_on_mobile {
@@ -1379,16 +1505,59 @@ footer .copyright p {
 
 
   /* DESKTOP SECTION: NEWS title */
-  .news_title h1 {
-    padding: 8% 6% 3.5% 6%;
+  .news_title {
+    padding: 6% 6% 2.5% 6%;
   }    
 
 
+  /* DESKTOP SECTION: News containers */
+  .news_all {
+    padding: 0 6% 7% 6%;
+  }
+
+
+  /* DESKTOP SECTION: MILESTONES */
+  .milestone_title {
+    padding: 6% 6% 4% 6%;
+  }
+
+  .milestone_all {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: calc(var(--font_l) * 1.3) 0;
+    padding: 0% 3% 2% 6%;
+  }
+  
+  .wreath_left {
+    height: 80px;
+    width: 12%;
+  }
+  .middle {
+    width: 59%;
+  }
+  .milestone_text1 {
+    font-size: calc(var(--font_n) * 1.1);
+    white-space: nowrap;
+  }
+  .milestone br {
+    display: none;
+  }
+  .milestone_text2 {
+    font-size: calc(var(--font_l) * 1);
+  }
+  .wreath_right {
+    height: 80px;
+    width: 14%;
+  }
+
+
   /* DESKTOP SECTION: WORDS THAT WARM OUR HEARTS */
-  .testimonial_title h1 {
+  .testimonial_title_only {
     padding: 10% 6% 0 6%;
   }
 
+  .testimonial_container {
+    padding: 0 0 1.5% 0;
+  }
 
   /* DESKTOP SECTION: WHAT DO WE DO? */  
   .objective {
