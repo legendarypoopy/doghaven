@@ -791,7 +791,8 @@ nav ul li:last-child {
   display: grid;
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
-  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 2fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(8.5rem, 2fr)); */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: var(--font_m) var(--font_s);
   padding: 0% 3% 0% 6%;
 
@@ -1335,7 +1336,8 @@ footer .copyright p {
   .milestone_all {
     /* Can change 1 to auto-fit and it will be responsive
     18rem is the biggest it can go before the screen can't fit for small mobile devices */
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 3fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(12rem, 3fr)); */
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--font_m) 0;
     padding: 0% 2% 0% 6%;
 
