@@ -204,13 +204,7 @@ nav ul li:last-child {
 }
 .slider_image1 {
   height: 450px;
-  background-image: url("IMG/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: 570%;
-  /* Adjust image left/right */
-  background-position-x: 48.3%;
-  /* Adjust image top/bottom */
-  background-position-y: 38%;
+  background: url("IMG/hero-mobile.JPG") 5px 70% / contain no-repeat;
 }
 
 /* -------------------------------------------------
@@ -350,12 +344,8 @@ nav ul li:last-child {
   /* background-position: 400px 100px; */
 }
 .slider_image2 {
-  background-image: url("IMG/grooming\ course.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  /* width: 100%; */
   height: 650px;
+  background: url("IMG/grooming\ course.jpg") top / cover no-repeat;
 }
 
 
@@ -365,8 +355,6 @@ nav ul li:last-child {
   position: absolute;
   /* width of overylay */
   width: 100%;
-  /* shift the overlay to the right */
-  /* margin: 0 0% 0 50%; */
   /* Note: height is 100% in respect to intro height of 100vh */
   height: 100%;
   /* Darken the background image so that text are more readable */
@@ -456,12 +444,9 @@ nav ul li:last-child {
   /* padding: 10% 5% 10% 5%; */
 }
 .slider_image3 {
-  background-image: url("IMG/homestay.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 70%;
-  /* width: 100%; */
   height: 650px;
+  background: url("IMG/homestay.JPG") 70% 0 / cover no-repeat;
+  /* background-position-x: 70%; */
 }
 
 
@@ -685,13 +670,13 @@ nav ul li:last-child {
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
-  grid-gap: var(--font_m) var(--font_m);
+  grid-gap: var(--font_m);
   padding: 0 6%;
 }
 
 .news1 {
   background: var(--clr_light);    
-  transition: transform 250ms;
+  transition: transform ease-out 250ms;
 }
 .news1:hover {  
   /* use below box-shadow if using light background: */
@@ -723,22 +708,9 @@ nav ul li:last-child {
 .container_image1 {
   width: 100%;
   min-height: 22rem;
-  background: url("IMG/okto.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--clr_primary);
-  /* overflow: hidden; */
+  background: var(--clr_primary) url("IMG/okto.JPG") center / cover no-repeat;
+  /* background-position: center; */
 }
-/* .video_okto { */
-  /* width: 100%; */
-  /* min-height: 15rem; */
-  /* filter to enahnce the video color */
-  /* -webkit-filter: contrast(150%);filter: contrast(130%); */
-  /* if you want to center the video no matter how you resize, change the top and left to 50%, and transform: translate(-50%, -50%)  
-  else, set top and left as 0, remove the transform*/
-  /* transform: translate(-50%, -50%); */
-/* }  */
 .container_text1 {
   min-height: 2rem;
 }
@@ -753,7 +725,7 @@ nav ul li:last-child {
 
 .news2 {
   background: var(--clr_light);
-  transition: transform 250ms;
+  transition: transform ease-out 250ms;
 }
 .news2:hover {
   /* use below box-shadow if using light background: */
@@ -784,16 +756,9 @@ nav ul li:last-child {
 }
 .container_image2 {
   width: 100%;
-  /* height: 100%; */
   min-height: 22rem;
-  /* height: 85%; */
-  /* background: url("straits-times-test.jpg"); */
-  background: url("IMG/straits-times.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* overflow: hidden; */
-  background-color: var(--clr_primary);
+  background: var(--clr_primary) url("IMG/straits-times.JPG") center / cover no-repeat;
+  /* background-position: center; */
 }
 .container_text2 {
   /* height: 15%; */
@@ -895,19 +860,6 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
   All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
   
   background: var(--clr_light);
-
-    /* Image position and size adjustment */
-    /* background-image: url("GR1.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 32%; */
-    /* Adjust image left/right */
-    /* background-position-x: 85%; */
-    /* Adjust image left/right/top/bottom */
-    /* background-position-y: bottom; */
-    /* background-position-y: right; */
-
-    /* background-position: 400px 100px; */ 
-    /* background-size: cover; */
 }
 .objective .objective_text {
   width: 100%;
@@ -930,13 +882,14 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 .divider1_image_on_mobile {
     height: 300px;
-    background-image: url("IMG/goldenr.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("IMG/goldenr.png") 55% bottom / contain no-repeat;
+    /* background-image: url("IMG/goldenr.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
     /* Adjust image left/right */
-    background-position-x: 55%;
+    /* background-position-x: 55%; */
     /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
+    /* background-position-y: bottom; */
 }
 
 
@@ -988,13 +941,7 @@ IMPTT: Do not attempt to change the left and right as fixed on span. Will screw 
 }
 .divider2_image_on_mobile {
   height: 260px;
-  background-image: url("IMG/dogshadow.JPG");
-  background-repeat: no-repeat;
-  background-size: 120%;
-  /* Adjust image left/right */
-  /* background-position-x: left; */
-  /* Adjust image left/right/top/bottom */
-  background-position-y: top;
+  background: url("IMG/dogshadow.JPG") 0 top / 120% no-repeat;
 }
 
 
@@ -1225,22 +1172,7 @@ footer .copyright p {
 
   /* TABLET SECTION: Intro1 */
   .slider_image1 {
-    /* width: 100%; */
-    /* height: 500px; */
-    /* Image position and size adjustment */
-    /* background-image: url("IMG/hero.jpg"); */
-    /* background-repeat: no-repeat; */
-    background-size: 165%;
-    /* background-size: cover; */
-    /* background-position: center center; */
-    /* Adjust image left/right */
-    background-position-x: 43%;
-    /* Adjust image top/bottom */
-    background-position-y: -1.5rem;
-    /* background-position: bottom; */
-    /* Adjust image left/right/top/bottom */
-    /* background-position: 400px 100px; */
-    /* display: none; */
+    background: url("IMG/hero.JPG") 43% 0 / 170% no-repeat;
   }
 
 
@@ -1310,13 +1242,14 @@ footer .copyright p {
 
   /* TABLET SECTION: WHAT DO WE DO? */
   .objective {
-    background-image: url("IMG/goldenr.png");
-    background-repeat: no-repeat;
-    background-size: 58%;
+    background: url("IMG/goldenr.png") 110% bottom / 58% no-repeat;
+    /* background-image: url("IMG/goldenr.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 58%; */
     /* Adjust image left/right */
-    background-position-x: 110%;
+    /* background-position-x: 110%; */
     /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
+    /* background-position-y: bottom; */
   }
   .objective p {
     padding: 3% 51% 6% 6%;
@@ -1330,14 +1263,7 @@ footer .copyright p {
 
   /* TABLET SECTION: WHAT'S OUR SECERT? */
   .secret {
-    background-color: var(--clr_dark);
-    background-image: url("IMG/dogshadow.JPG");
-    background-repeat: no-repeat;
-    background-size: 58%;
-    /* Adjust image left/right */
-    background-position-x: left;
-    /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
+    background: var(--clr_dark) url("IMG/dogshadow.JPG") left bottom / 58% no-repeat;
   }
   .secret h1 {
     /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
@@ -1396,8 +1322,6 @@ footer .copyright p {
     height: 100vh;
     background-size: cover;
     /* background: pink; */
-    /* background-size: 100%; */
-    /* background-position-y: 0; */
   }
   .intro1_header1 {
     padding: 34% 6% 0 6%;
@@ -1468,11 +1392,7 @@ footer .copyright p {
 
   /* DESKTOP SECTION: WHAT DO WE DO? */  
   .objective {
-    background-size: 30%;
-    /* Adjust image left/right */
-    background-position-x: 85%;
-    /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
+    background: url("IMG/goldenr.png") 85% bottom / 30% no-repeat;
   }
   .objective h1 {
     padding: 6% 6% 0 6%;
@@ -1486,9 +1406,9 @@ footer .copyright p {
   .secret {
     background-size: 50%;
     /* Adjust image left/right */
-    background-position-x: left;
+    /* background-position-x: left; */
     /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
+    /* background-position-y: bottom; */
   }
   .secret h1 {
     /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
