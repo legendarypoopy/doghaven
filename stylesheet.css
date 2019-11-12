@@ -658,7 +658,7 @@ nav ul li:last-child {
   /* width: 100%; */
 }
 .news_title {
-  padding: 12% 6% 6% 6%;
+  padding: 13% 6% 6% 6%;
   color: var(--clr_accent);
   background: var(--clr_shade);
 }  
@@ -778,7 +778,7 @@ nav ul li:last-child {
 
 /* MOBILE SECTION: MILESTONES */
 .milestone_title {
-  padding: 12% 6% 6% 6%;
+  padding: 13% 6% 6% 6%;
   background: var(--clr_dark);
   color: var(--clr_light);
 }
@@ -796,7 +796,7 @@ nav ul li:last-child {
   grid-gap: var(--font_m) var(--font_s);
   padding: 0% 3% 0% 6%;
 
-  grid-template-areas: 
+  grid-template-areas:
   "milestone_grid1 milestone_grid2"
   "milestone_grid3 milestone_grid4"
   "milestone_grid5 milestone_grid6";
@@ -1524,7 +1524,7 @@ footer .copyright p {
   }
 
   .milestone_all {
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: calc(var(--font_l) * 1.3) 0;
     padding: 0% 3% 2% 6%;
   }
