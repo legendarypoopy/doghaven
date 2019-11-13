@@ -363,7 +363,13 @@ nav ul li:last-child {
 }
 /* Button 1 style: Green button hover */
 .btn_margin_intro1 {
-  margin: 2.2% 0% 10% 34%;
+  /* Left and transform will vertically center the button */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Margin will adjust up and down */
+  margin: 7% 0;
+  /* Old margin without 'Left and transform' */
+  /* margin: 2.2% 0% 10% 34%; */
 }
 
 
@@ -1086,8 +1092,8 @@ footer .copyright p {
   }
   .btn_margin_intro1 {
   /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-    /* margin: 2.2% 6% 10% 33%; */
-    margin: 1.2% 6% 10% 41%;
+    /* margin: 1.2% 6% 10% 41%; */
+    margin: 3.5% 0;
   }
 
 
@@ -1276,7 +1282,8 @@ footer .copyright p {
   }
   .btn_margin_intro1 {
     /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-      margin: 1.2% 6% 10% 45%;
+      /* margin: 1.2% 6% 10% 45%; */
+      margin: 2% 0;
     }
 
   /* DESKTOP SECTION: Intro2 */
