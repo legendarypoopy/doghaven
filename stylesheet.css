@@ -51,6 +51,114 @@ p {
 }
 
 
+/* Universal Button 1 style: Green button hover */
+.btn_green {
+  font-size: var(--font_n);
+  padding: 0 15px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_accent);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_accent);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  /* NOTE: Adjust margin in inidivudal div */
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn_green:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_primary);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn_green:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_primary);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn_green:hover {
+  color: var(--clr_dark);
+  border: 1px solid var(--clr_primary);
+  z-index: 1;
+}
+.btn_green:hover:before {
+  top: 0;
+}
+
+
+/* Universal Button 2 style: White button hover */
+.btn_white {
+  font-size: var(--font_n);
+  padding: 0 15px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_light);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_light);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  /* NOTE: Adjust margin in inidivudal div */
+
+  /* Below not required after i added padding to give equal left and right spacing regardless of text length */
+  /* width: 110px;
+  height: 25px; */
+}
+.btn_white:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn_white:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_light);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn_white:hover {
+  color: var(--clr_dark);
+  border: 1px solid var(--clr_light);
+  z-index: 1;
+}
+.btn_white:hover:before {
+  top: 0;
+}
+
+
+
+
 
 
 
@@ -208,17 +316,17 @@ nav ul li:last-child {
 }
 
 /* -------------------------------------------------
-  * IMPTT: ADD ON BELOW FOR ZOOMING EFFECTS FOR ALL 4 SLIDERS
+  * IMPTT: ADD ON BELOW FOR ZOOMING EFFECTS FOR FIRST 3 SLIDERS
   -------------------------------------------------  */
 .zooming_effect {
   position: absolute;
   width: 100%;
   animation: zooming_effect 20s linear backwards infinite;
 }  
-.slider_image1:before {
+/* .slider_image1:before {
   position: absolute;
   content:"";
-}
+} */
 @keyframes zooming_effect {
   0% {
     transform: scale(1);
@@ -253,63 +361,10 @@ nav ul li:last-child {
   /* align text to center of the page */
   text-align: center;
 }
-/* Button 1 style: Grey text and perimeter */
-.btn1 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_accent);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_accent);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-  
-/* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-  /* margin: 2.2% 6% 10% 33%; */
+/* Button 1 style: Green button hover */
+.btn_margin_intro1 {
   margin: 2.2% 0% 10% 34%;
-  /* left: 34%; */
-
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
 }
-.btn1:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_primary);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn1:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_primary);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn1:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_primary);
-  z-index: 1;
-}
-.btn1:hover:before {
-  top: 0;
-}
-
 
 
 
@@ -375,60 +430,10 @@ nav ul li:last-child {
   /* Position relative will make the text visible as there is an overlay above it */
   position: relative;
 }
-/* Button 2 style: White text and perimeter */
-.btn2 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_light);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_light);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+/* Button 1 style: White button hover */
+.btn_white {
   margin: 2.2% 5% 5% 6%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
 }
-.btn2:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn2:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn2:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_light);
-  z-index: 1;
-}
-.btn2:hover:before {
-  top: 0;
-}
-
 
 
 
@@ -475,57 +480,8 @@ nav ul li:last-child {
   position: relative;
 }
 /* Button 3 style: White text and perimeter */
-.btn3 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_light);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_light);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+.btn_margin_intro3 {
   margin: 2.2% 5% 5% 6%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn3:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn3:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn3:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_light);
-  z-index: 1;
-}
-.btn3:hover:before {
-  top: 0;
 }
 
 
@@ -598,56 +554,8 @@ nav ul li:last-child {
   overflow: hidden;
 }
 /* Button 4 style: White text and perimeter */
-.btn4 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_light);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_light);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+.btn_margin_intro4 {
   margin: 2.2% 10% 5% 6%;
-
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn4:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn4:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_light);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn4:hover {
-  color: var(--clr_dark);
-  z-index: 1;
-}
-.btn4:hover:before {
-  top: 0;
 }
 
 
@@ -664,7 +572,9 @@ nav ul li:last-child {
 }  
 
 
-/* MOBILE SECTION: News containers */
+/* ************************************************
+   MOBILE SECTION: FOR BOTH NEWS 1 and 2
+   ************************************************ */
 .news_all {
   background: var(--clr_shade);
   display: grid;
@@ -675,11 +585,11 @@ nav ul li:last-child {
   padding: 0 6% 15% 6%;
 }
 
-.news1 {
+.news {
   background: var(--clr_light);    
-  transition: transform ease-out 250ms;
+  transition: transform 250ms ease-out;
 }
-.news1:hover {  
+.news:hover {  
   /* use below box-shadow if using light background: */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -687,15 +597,15 @@ nav ul li:last-child {
   /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49); */
   transform: scale(1.015);
 }
-.news1_link:link {
+.news_link:link {
   color: var(--clr_accent);
   text-decoration: none;
 }
-.news1_link:visited {
+.news_link:visited {
   color: var(--clr_accent);
   text-decoration: none;
 }
-.news1_link:hover {
+.news_link:hover {
   /* background-color: red; */
   /* z-index: -991; */
   color: var(--clr_dark);
@@ -703,75 +613,33 @@ nav ul li:last-child {
   /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
   /* -webkit-filter: opacity(50%);filter: opacity(50%); */
 }
-.news1_link:active {
-  color: var(--clr_accent);
+.news_link:active {
+  color: var(--clr_primary);
   text-decoration: none;
 }
 .container_image1 {
   width: 100%;
   min-height: 22rem;
-  background: var(--clr_primary) url("IMG/okto.JPG") center / cover no-repeat;
+  background: url("IMG/okto.JPG") center / cover no-repeat var(--clr_primary);
   /* background-position: center; */
 }
-.container_text1 {
+.container_news_text {
   min-height: 2rem;
 }
-.news1 h3 {
+.news_text_title {
   padding: 17px 0 0 17px;
 }
-.news1 p {
+.news_text_body {
   padding: 3px 17px 15px 17px;
 }
 
 
-
-.news2 {
-  background: var(--clr_light);
-  transition: transform ease-out 250ms;
-}
-.news2:hover {
-  /* use below box-shadow if using light background: */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  /* use below box-shadow if using dark background: */
-  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.49); */
-  transform: scale(1.015);
-}
-.news2_link:link {
-  color: var(--clr_accent);
-  text-decoration: none;
-}
-.news2_link:visited {
-  color: var(--clr_accent);
-  text-decoration: none;
-}
-.news2_link:hover {
-  /* background-color: red; */
-  /* z-index: -991; */
-  color: var(--clr_dark);
-  text-decoration: none;
-  /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
-  /* -webkit-filter: opacity(50%);filter: opacity(50%); */
-}
-.news2_link:active {
-  color: var(--clr_accent);
-  text-decoration: none;
-}
+/* MOBILE SECTION: FOR NEWS 2 */
 .container_image2 {
   width: 100%;
   min-height: 22rem;
-  background: var(--clr_primary) url("IMG/straits-times.JPG") center / cover no-repeat;
+  background: url("IMG/straits-times.JPG") center / cover no-repeat var(--clr_primary);
   /* background-position: center; */
-}
-.container_text2 {
-  /* height: 15%; */
-  min-height: 2rem;
-}
-.container_text2 h3 {
-  padding: 17px 0 0 17px;
-}
-.container_text2 p {
-  padding: 3px 17px 15px 17px;
 }
 
 
@@ -1072,58 +940,10 @@ footer .copyright p {
   font-size: var(--font_s);
 }
 /* Button 5 style (for Footer only): White text and perimeter */
-.btn5 {
-  font-size: var(--font_n);
-  padding: 0 15px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid var(--clr_accent);
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr_accent);
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s;
-
-/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+.btn_margin_footer {
   margin: 2.2% 5% 10% 6%;
+}
 
-/* Below not required after i added padding to give equal left and right spacing regardless of text length */
-  /* width: 110px;
-  height: 25px; */
-}
-.btn5:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_primary);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn5:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--clr_primary);
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  transition: .3s;
-}
-.btn5:hover {
-  color: var(--clr_dark);
-  border: 1px solid var(--clr_primary);
-  z-index: 1;
-}
-.btn5:hover:before {
-  top: 0;
-}
 
 .social .icon1 {
   font-size: calc(var(--font_n)*2);
@@ -1264,7 +1084,7 @@ footer .copyright p {
   .intro1_header1 {
     padding: 54% 6% 0 6%;
   }
-  .btn1 {
+  .btn_margin_intro1 {
   /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
     /* margin: 2.2% 6% 10% 33%; */
     margin: 1.2% 6% 10% 41%;
@@ -1275,7 +1095,7 @@ footer .copyright p {
   .intro2_header1 {
     padding: 40% 44% 0 6%;
   }
-  .btn2 {
+  .btn_margin_intro2 {
     margin: 1.2% 5% 5% 6%;
   }
 
@@ -1287,7 +1107,7 @@ footer .copyright p {
   .intro3_header2 {
     padding: 0.5% 65% 0% 6%;
   }
-  .btn3 {
+  .btn_margin_intro3 {
   margin: 1.2% 5% 5% 6%; 
   }
 
@@ -1311,7 +1131,7 @@ footer .copyright p {
   .intro4_body {
     padding: 2% 6% 0 56%;
   }
-  .btn4 {
+  .btn_margin_intro4 {
   /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
     margin: 1.2% 5% 5% 56%;
   }
@@ -1454,7 +1274,7 @@ footer .copyright p {
   .intro1_header1 {
     padding: 34% 6% 0 6%;
   }
-  .btn1 {
+  .btn_margin_intro1 {
     /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
       margin: 1.2% 6% 10% 45%;
     }
@@ -1466,7 +1286,7 @@ footer .copyright p {
   .intro2_header1 {
     padding: 20% 57% 0 6%;
   }
-  .btn2 {
+  .btn_margin_intro2 {
     margin: 0.9% 5% 5% 6%;
   }
 
@@ -1480,7 +1300,7 @@ footer .copyright p {
   .intro3_header2 {
     padding: 0.5% 70% 0% 6%;
   }
-  .btn3 {
+  .btn_margin_intro3 {
     margin: 0.9% 5% 5% 6%;
   }
 
@@ -1500,7 +1320,7 @@ footer .copyright p {
   .intro4_body {
     padding: 2% 8% 0 59%;
   }
-  .btn4 {
+  .btn_margin_intro4 {
   /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
     margin: 0.9% 10% 5% 59%;
   }
@@ -1595,7 +1415,7 @@ footer .copyright p {
   footer .info p {
     padding: 0.5% 61% 0% 6%;
   }
-  .btn5 {
+  .btn_margin_footer {
   /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
     margin: 1% 5% 5% 6%;
 
